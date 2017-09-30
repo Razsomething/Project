@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="js/parallax.js"></script>
     <style>
         #sidenav-overlay
         {
@@ -24,14 +23,14 @@
                 <a href="index.html" class="brand-logo" style="font-size: 3.5vw"><span class="green-text text-darken-2" style="padding-left: 10px;">reinventing</span>your career</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a>Home</a></li>
-                    <li><a href="html/challenges.html">javaScript</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
+                    <li><a href="challenges.html">javaScript</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a class="waves-effect waves-light btn black">Home</a></li>
-                    <li><a class="waves-effect waves-light btn black" href="html/challenges.html">javaScript</a></li>
-                    <li><a class="waves-effect waves-light btn black" href="html/contact.html">Contact</a></li>
+                    <li><a class="waves-effect waves-light btn black" href="challenges.html">javaScript</a></li>
+                    <li><a class="waves-effect waves-light btn black" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +41,7 @@
 
     <div class="main">
         <div class="parallax-container">
-            <div class="parallax"><img src="Media/Pictures/mountains.jpg"></div>
+            <div class="parallax"><img src="media/pictures/mountains.jpg"></div>
         </div>
         <div class="row">
             <div>
@@ -84,25 +83,19 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <p class="grey-text text-lighten-4">Designed by Răzvan Mîrleneanu using <a href="http://materializecss.com/">MaterializeCSS</a> </p>
+                    <p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a href="http://materializecss.com/">MaterializeCSS</a> </p>
                 </div>
-
-                <ul class="pagination">
-                    <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
-                    <li><a>Home</a></li>
-                    <li><a href="html/challenges.html">javaScript</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
-                    <li class="waves-effect" style="border-radius: 0px"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                </ul>
-            </div>
-        </div>
 
     </footer>
 </div>
 <!-- Scripts -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
-<script type="text/javascript" src="js/parallax.js"></script>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.parallax').parallax();
+        $(".button-collapse").sideNav();
+    });
+</script>
 </body>
 </html>

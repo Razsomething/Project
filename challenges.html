@@ -44,19 +44,7 @@
         </div>
         <br>
         <br>
-        <!-- Switch -->
-        <div class="s1 left-align">
-        <div class="switch">
-            <label>
-                Off
-                <input type="checkbox">
-                <span class="lever" onclick="handlers.toggleAll()"></span>
-                On
-            </label>
-        </div>
-            <br>
-            <br>
-        </div>
+
         <!-- Button for adding a to-do-->
         <div>
             <div class="col s6">
@@ -96,6 +84,21 @@
                 <input id="toggleTodoNumber" type="number">
                 <label for="toggleTodoNumber">Index</label>
             </div>
+        </div>
+        <br>
+        <br>
+        <!-- Switch -->
+        <div class="col s6 offset-s6">
+            <div class="switch">
+                <label>
+                    Toggle all as incomplete
+                    <input type="checkbox" onclick="handlers.toggleAll()">
+                    <span class="lever"></span>
+                    Toggle all as complete
+                </label>
+            </div>
+            <br>
+            <br>
         </div>
         <ol id="list" class="col s12" start="0">
 

@@ -73,7 +73,6 @@ var view = {
         todoUl.innerHTML = '';
         toDoList.toDo.forEach(function (todo, position) {
            var todoLi = document.createElement('li');
-            //     // Remember to edit li CSS settings
            var todoTextWithCompletion = '';
 
            if (todo.completed === true) {
@@ -89,9 +88,10 @@ var view = {
         }, this)
     },
     createDeleteButton : function () {
-        var deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.className = 'deleteButton';
+        var deleteButton = document.createElement('i');
+        deleteButton.textContent = 'close';
+        deleteButton.id = 'deleteButton';
+        deleteButton.className = 'material-icons'
         return deleteButton;
 
     },
@@ -100,11 +100,18 @@ var view = {
         var createBreak = document.createElement('br');
         return createBreak;
     },
+    createDoneIcon : function () {
+        var createDoneIcon = document.createElement('i');
+        createDoneIcon.textContent = 'check_box';
+        createDoneIcon.className = 'material-icons';
+        return createDoneIcon;
+
+    },
     setUpEventListeners : function () {
         var todoUl = document.querySelector('ol');
         todoUl.addEventListener('click', function (event) {
             var elementClicked = event.target;
-            if (elementClicked.className === 'deleteButton') {
+            if (elementClicked.id === 'deleteButton') {
                 handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
             }
         });

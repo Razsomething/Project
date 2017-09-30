@@ -1,0 +1,160 @@
+/* Settings for the whole page */
+* {
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/* Logo text  */
+.logo {
+    width: 60%;
+    padding-top: 30px;
+    overflow: hidden;
+    margin: auto;
+}
+/* Styling for the logo text */
+header {
+    background-color: #323534;
+    color: white;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    border-bottom: thick solid #8db53b;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+/* Navigation toolbar  */
+.navigation {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    width: 60%;
+    margin:auto;
+}
+.buttons {
+    padding: 8px;
+    background-color: #595959;
+    border: none;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin: 1px;
+}
+#active {
+    background-color: #8db53b;
+}
+a:hover {
+    color: #e4ec04;
+}
+/* Actual page content */
+.content {
+    margin: auto;
+    overflow: auto;
+    box-sizing: border-box;
+    width:60%;
+}
+/* Image with text on hover */
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.actualimg {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+.overlay {
+    position: absolute;
+    top: -4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #323534;
+}
+
+.container:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/* Text located under the mountains picture */
+.article {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+/* Text located on the left side */
+.left {
+    width: 60%;
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 39px;
+}
+.h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 5px;
+    text-indent: 50px;
+}
+/* Text located on the right side */
+.right {
+   width: auto;
+   overflow: auto;
+   margin: auto;
+}
+/* Footer section */
+footer {
+    margin: auto;
+    overflow: auto;
+    background-color: #323534;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+li {
+    margin: 10px;
+    display: inline;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}

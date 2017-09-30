@@ -15,6 +15,7 @@
 </head>
 <body>
 <!-- Header content -->
+
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper grey darken-4">
@@ -38,16 +39,25 @@
 <div class="container">
     <div class="row">
 
+        <div class="switch" onclick="handlers.toggleAll()">
+            <label>
+                Off
+                <input type="checkbox" onclick="handlers.toggleAll()">
+                <span class="lever" onclick="handlers.toggleAll()"></span>
+                On
+            </label>
+        </div>
+
         <div>
             <h1>To-do List</h1>
-            <-- Button for toggling all the to-do's done or undone-->
+            <!-- Button for toggling all the to-do's done or undone-->
             <div class="col s12">
                 <button class="btn waves-effect waves-light red" type="submit" name="action"
                         onclick="handlers.toggleAll()">Toggle all the to-do's as completed
                 </button>
             </div>
         </div>
-        <-- Button for adding a to-do-->
+        <!-- Button for adding a to-do-->
         <div>
             <div class="col s6">
                 <button class="btn waves-effect waves-light red" type="submit" name="action"
@@ -59,11 +69,11 @@
                 <label for="addTodoTextInput">What would you like to accomplish today?</label>
             </div>
         </div>
-
+        <!-- Button for changing a to-do-->
         <div>
-            <div class="col s12 m7">
+            <div class="col s12 m7 l6">
                 <button class="btn waves-effect waves-light red" type="submit" name="action"
-                        onclick="handlers.changeTodo()"">Change a to-do
+                        onclick="handlers.changeTodo()">Change a to-do
                 </button>
             </div>
                 <div class="input-field col s6 m6 l1">
@@ -75,15 +85,17 @@
                 <label for="changeTodoText">Updated content</label>
             </div>
         </div>
-
-        </div>
+        <!-- Button for toggling a single to-do-->
         <div>
             <div class="col s6">
                 <button class="btn waves-effect waves-light red" type="submit" name="action"
                         onclick="handlers.toggleCompleted()">Toggle as completed
                 </button>
             </div>
-            <input id="toggleTodoNumber" type="number" class="col s12 m12 l1">
+            <div class="input-field col s6">
+                <input id="toggleTodoNumber" type="number">
+                <label for="toggleTodoNumber">Index</label>
+            </div>
         </div>
         <ol id="list" class="col s12" start="0">
 

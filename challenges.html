@@ -2,58 +2,113 @@
 <html lang="en">
 <head>
     <title>JavaScript Examples</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
+    <style>
+        #sidenav-overlay {
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="logo">
-            <p style="font-size:40px;">reinventing
-                <a href="index.html"><span style="color:#e4ec04">your career</span></a>
-            </p>
+<!-- Header content -->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a href="index.html" class="brand-logo" style="font-size: 3.5vw"><span class="green-text text-darken-2"
+                                                                                   style="padding-left: 10px;">reinventing</span>your
+                career</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a>javaScript</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves-light btn black" href="index.html">Home</a></li>
+                <li><a class="waves-effect waves-light btn black">javaScript</a></li>
+                <li><a class="waves-effect waves-light btn black" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="navigation">
-            <button class="buttons"><a href="contact.html">Contact</a></button>
-            <button class="buttons" id="active"><a href="challenges.html">JavaScript Examples</a></button>
-            <button class="buttons"><a href="ui%20examples.html">HTML and CSS Examples</a></button>
-            <button class="buttons"> <a href="index.html">Home</a></button>
-        </div>
-    </header>
+    </nav>
 </div>
-<div class="content">
-<div>
-    <h1>Todo List</h1>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
-</div>
-<div>
-    <button onclick="handlers.addTodo()">Add To-do</button>
-    <input id="addTodoTextInput" type="text">
-</div>
-<div>
-    <button onclick="handlers.changeTodo()">Change</button>
-    <input id="changeTodoNumber" type="number">
-    <input id="changeTodoText" type="text">
-</div>
-<div>
-    <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-    <input id="toggleTodoNumber" type="number">
-</div>
-<ol id="list">
+<div class="container">
+    <div class="row">
 
-</ol>
+        <div>
+            <h1>To-do List</h1>
+            <-- Button for toggling all the to-do's done or undone-->
+            <div class="col s12">
+                <button class="btn waves-effect waves-light red" type="submit" name="action"
+                        onclick="handlers.toggleAll()">Toggle all the to-do's as completed
+                </button>
+            </div>
+        </div>
+        <-- Button for adding a to-do-->
+        <div>
+            <div class="col s6">
+                <button class="btn waves-effect waves-light red" type="submit" name="action"
+                        onclick="handlers.addTodo()">Add a to-do
+                </button>
+            </div>
+            <div class="input-field col s12 m12 l6">
+                <input id="addTodoTextInput" type="text">
+                <label for="addTodoTextInput">What would you like to accomplish today?</label>
+            </div>
+        </div>
+
+        <div>
+            <div class="col s12 m7">
+                <button class="btn waves-effect waves-light red" type="submit" name="action"
+                        onclick="handlers.changeTodo()"">Change a to-do
+                </button>
+            </div>
+                <div class="input-field col s6 m6 l1">
+                <input id="changeTodoNumber" type="number">
+                <label for="changeTodoNumber">Index</label>
+                </div>
+            <div class="input-field col s6 m6 l5">
+                <input id="changeTodoText" type="text" >
+                <label for="changeTodoText">Updated content</label>
+            </div>
+        </div>
+
+        </div>
+        <div>
+            <div class="col s6">
+                <button class="btn waves-effect waves-light red" type="submit" name="action"
+                        onclick="handlers.toggleCompleted()">Toggle as completed
+                </button>
+            </div>
+            <input id="toggleTodoNumber" type="number" class="col s12 m12 l1">
+        </div>
+        <ol id="list" class="col s12" start="0">
+
+        </ol>
+    </div>
 </div>
-<div class="footer">
-    <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ui%20examples.html">HTML and CSS Examples</a></li>
-            <li><a href="challenges.html">JavaScript Examples</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </footer>
-</div>
+<!-- Footer content -->
+<footer class="page-footer black">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a
+                        href="http://materializecss.com/">MaterializeCSS</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+    });
+</script>
 <script src="js/JS.js"></script>
 </body>
 </html>

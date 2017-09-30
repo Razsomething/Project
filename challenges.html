@@ -39,23 +39,21 @@
 <div class="container">
     <div class="row">
 
-        <div class="switch" onclick="handlers.toggleAll()">
+        <div>
+            <h1>To-do List</h1>
+        </div>
+        <br>
+        <br>
+        <!-- Switch -->
+        <div class="s1 left-align">
+        <div class="switch">
             <label>
                 Off
-                <input type="checkbox" onclick="handlers.toggleAll()">
+                <input type="checkbox">
                 <span class="lever" onclick="handlers.toggleAll()"></span>
                 On
             </label>
         </div>
-
-        <div>
-            <h1>To-do List</h1>
-            <!-- Button for toggling all the to-do's done or undone-->
-            <div class="col s12">
-                <button class="btn waves-effect waves-light red" type="submit" name="action"
-                        onclick="handlers.toggleAll()">Toggle all the to-do's as completed
-                </button>
-            </div>
         </div>
         <!-- Button for adding a to-do-->
         <div>

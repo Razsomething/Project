@@ -2809,7 +2809,7 @@ ul.staggered-list li {
 }
 
 /*********************
-  media Query Classes
+  media files Query Classes
 **********************/
 @media only screen and (max-width: 600px) {
   .hide-on-small-only, .hide-on-small-and-down {

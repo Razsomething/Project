@@ -56,10 +56,11 @@ var handlers = {
         toDoList.deleteToDo(position);
         view.displayTodos();
     },
-    toggleCompleted : function () {
-        var todoPosition = document.getElementById('toggleTodoNumber');
-        toDoList.toggleCompleted(todoPosition.valueAsNumber);
-        todoPosition.value = '';
+    toggleCompleted : function (position) {
+        // var todoPosition = document.getElementById('toggleTodoNumber');
+        // toDoList.toggleCompleted(todoPosition.valueAsNumber);
+        // todoPosition.value = '';
+        toDoList.toggleCompleted(position);
         view.displayTodos();
     },
     toggleAll : function () {
@@ -68,46 +69,45 @@ var handlers = {
     }
 };
 var view = {
-    displayTodos : function () {
+    displayTodos: function () {
         var todoUl = document.getElementById('list');
         todoUl.innerHTML = '';
         toDoList.toDo.forEach(function (todo, position) {
-           var todoLi = document.createElement('li');
-           var todoTextWithCompletion = '';
+            var todoLi = document.createElement('li');
+            var todoTextWithCompletion = '';
 
-           if (todo.completed === true) {
-             todoTextWithCompletion = '(x)' + todo.todoText;
+            if (todo.completed === true) {
+                todoTextWithCompletion = '(x)' + todo.todoText;
             } else {
-             todoTextWithCompletion = '( )' + todo.todoText;
-              }
-           todoLi.id = position;
-           todoLi.textContent = todoTextWithCompletion;
-           todoLi.appendChild(this.createDeleteButton());
-           todoLi.appendChild(this.createBreak());
-           todoUl.appendChild(todoLi);
+                todoTextWithCompletion = '( )' + todo.todoText;
+            }
+            todoLi.id = position;
+            todoLi.textContent = todoTextWithCompletion;
+            todoLi.appendChild(this.createToggleButton());
+            todoLi.appendChild(this.createDeleteButton());
+            todoUl.appendChild(todoLi);
         }, this)
     },
-    createDeleteButton : function () {
+    createDeleteButton: function () {
         var deleteButton = document.createElement('i');
-        deleteButton.textContent = 'close';
+        deleteButton.textContent = 'Delete';
         deleteButton.id = 'deleteButton';
-        deleteButton.className = 'material-icons'
+        deleteButton.className = 'btn waves-effect waves-light red';
+        deleteButton.type= 'submit';
+        deleteButton.name= 'action';
         return deleteButton;
+    },
+    createToggleButton: function () {
+        var toggleButton = document.createElement('button');
+        toggleButton.textContent = 'Toggle';
+        toggleButton.id = 'toggleButton';
+        toggleButton.className = 'btn waves-effect waves-green darken-4';
+        toggleButton.type= 'submit';
+        toggleButton.name= 'action';
+        return toggleButton;
+    },
 
-    },
-    // Should remove this after sorting out the li css settings
-    createBreak : function () {
-        var createBreak = document.createElement('br');
-        return createBreak;
-    },
-    createDoneIcon : function () {
-        var createDoneIcon = document.createElement('i');
-        createDoneIcon.textContent = 'check_box';
-        createDoneIcon.className = 'material-icons';
-        return createDoneIcon;
-
-    },
-    setUpEventListeners : function () {
+    setUpEventListeners: function () {
         var todoUl = document.querySelector('ol');
         todoUl.addEventListener('click', function (event) {
             var elementClicked = event.target;
@@ -115,7 +115,14 @@ var view = {
                 handlers.deleteTodo(parseInt(elementClicked.parentNode.id));
             }
         });
+        todoUl.addEventListener('click', function (event) {
+            var elementClicked = event.target;
+            if (elementClicked.id === 'toggleButton') {
+                handlers.toggleCompleted(parseInt(elementClicked.parentNode.id));
+            }
+        });
     }
 };
+
 view.setUpEventListeners();
 

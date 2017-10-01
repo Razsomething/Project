@@ -27,43 +27,33 @@ var toDoList = {
                 completedTodos++;
             }
         });
-        this.toDo.forEach(function(todo) {
-            if (completedTodos === totalTodos) {
-                todo.completed = false;
-            } else {
-                todo.completed = true;
-            }
+        this.toDo.forEach(function (todo) {
+            todo.completed = completedTodos !== totalTodos;
         });
     }
 };
 
 var handlers = {
-    addTodo : function () {
+    addTodo: function () {
         var addTodoTextInput = document.getElementById('addTodoTextInput');
         toDoList.addToDo(addTodoTextInput.value);
         addTodoTextInput.value = '';
         view.displayTodos();
     },
-    changeTodo : function () {
-        var todoNumber = document.getElementById('changeTodoNumber');
+    changeTodo: function (position, todoText) {
         var todoText = document.getElementById('changeTodoText');
-        toDoList.changeToDo(todoNumber.valueAsNumber, todoText.value);
-        todoText.value = '';
-        todoNumber.value = '';
+        toDoList.changeToDo(position, todoText.value);
         view.displayTodos();
     },
-    deleteTodo : function (position) {
+    deleteTodo: function (position) {
         toDoList.deleteToDo(position);
         view.displayTodos();
     },
-    toggleCompleted : function (position) {
-        // var todoPosition = document.getElementById('toggleTodoNumber');
-        // toDoList.toggleCompleted(todoPosition.valueAsNumber);
-        // todoPosition.value = '';
+    toggleCompleted: function (position) {
         toDoList.toggleCompleted(position);
         view.displayTodos();
     },
-    toggleAll : function () {
+    toggleAll: function () {
         toDoList.toggleAll();
         view.displayTodos();
     }
@@ -77,36 +67,50 @@ var view = {
             var todoTextWithCompletion = '';
 
             if (todo.completed === true) {
-                todoTextWithCompletion = '(x)' + todo.todoText;
+                todoTextWithCompletion = '✔ ' + todo.todoText;
             } else {
-                todoTextWithCompletion = '( )' + todo.todoText;
+                todoTextWithCompletion = '✖ ' + todo.todoText;
             }
             todoLi.id = position;
             todoLi.textContent = todoTextWithCompletion;
+            // todoLi.appendChild(this.createChangeTodoButton());
+            // todoLi.appendChild(this.createInputForChangingToDo());
             todoLi.appendChild(this.createToggleButton());
             todoLi.appendChild(this.createDeleteButton());
             todoUl.appendChild(todoLi);
         }, this)
     },
     createDeleteButton: function () {
-        var deleteButton = document.createElement('i');
+        var deleteButton = document.createElement('a');
+        deleteButton.className = 'waves-effect waves-teal btn-flat';
         deleteButton.textContent = 'Delete';
         deleteButton.id = 'deleteButton';
-        deleteButton.className = 'btn waves-effect waves-light red';
-        deleteButton.type= 'submit';
-        deleteButton.name= 'action';
         return deleteButton;
     },
     createToggleButton: function () {
-        var toggleButton = document.createElement('button');
+        var toggleButton = document.createElement('a');
+        toggleButton.className = 'waves-effect waves-teal btn-flat';
         toggleButton.textContent = 'Toggle';
         toggleButton.id = 'toggleButton';
-        toggleButton.className = 'btn waves-effect waves-green darken-4';
-        toggleButton.type= 'submit';
-        toggleButton.name= 'action';
+
         return toggleButton;
     },
-
+    // createChangeTodoButton: function () {
+    //     var todoButton = document.createElement('button');
+    //     todoButton.textContent = 'Change';
+    //     todoButton.id = 'todoButton';
+    //     return todoButton;
+    // },
+    // createInputForChangingToDo: function () {
+    //     var inputForChangingToDo = document.createElement('input');
+    //     inputForChangingToDo.textContent = 'Updated content';
+    //     inputForChangingToDo.id = 'changeTodoText';
+    //     inputForChangingToDo.className = 'input-field col s12 m12 l6';
+    //     inputForChangingToDo.type = 'text';
+    //     inputForChangingToDo.label = 'Updated content';
+    //     inputForChangingToDo.style = 'border : 0px; margin : 0px';
+    //     return inputForChangingToDo;
+    // },
     setUpEventListeners: function () {
         var todoUl = document.querySelector('ol');
         todoUl.addEventListener('click', function (event) {
@@ -119,6 +123,14 @@ var view = {
             var elementClicked = event.target;
             if (elementClicked.id === 'toggleButton') {
                 handlers.toggleCompleted(parseInt(elementClicked.parentNode.id));
+            }
+        });
+        todoUl.addEventListener('click', function (event) {
+            var elementClicked = event.target;
+            if (elementClicked.id === 'todoButton') {
+                var position = parseInt(elementClicked.parentNode.id);
+                var newText = document.getElementById('changeTodoText');
+                handlers.changeTodo(position, newText);
             }
         });
     }

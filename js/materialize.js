@@ -1442,6 +1442,7 @@ if (Vel) {
       ****************/
 
       // Accordion Open
+
       function accordionOpen(object) {
         $panel_headers = $this.find('> li > .collapsible-header');
         if (object.hasClass('active')) {

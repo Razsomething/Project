@@ -15,7 +15,6 @@
 </head>
 <body>
 <!-- Header content -->
-
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper grey darken-4">
@@ -36,51 +35,60 @@
         </div>
     </nav>
 </div>
+
 <div class="container">
     <div class="row">
 
-        <div>
-            <h1>To-do List</h1>
-        </div>
-        <br>
-        <br>
+        <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+
+                <div class="collapsible-header">
+                    <h1>To-do List</h1>
+                </div>
 
 
-        <!-- Button for adding a to-do-->
-        <div>
-            <div class="col s12 m6">
-                <button class="btn waves-effect waves-light" type="submit" name="action"
-                        onclick="handlers.addTodo()" style="background-color: #388E3C ">Add a to-do
-                </button>
-            </div>
-            <div class="input-field col s12 m6">
-                <input id="addTodoTextInput" type="text">
-                <label for="addTodoTextInput">What would you like to accomplish today?</label>
-            </div>
-        </div>
+                <!-- Button for adding a to-do-->
+                <div class="collapsible-body">
 
-        <!-- Switch -->
-        <div class="col s6">
-            <div class="switch">
-                <label>
-                    Toggle all as incomplete
-                    <input type="checkbox" onclick="handlers.toggleAll()">
-                    <span class="lever"></span>
-                    Toggle all as complete
-                </label>
-            </div>
-            <br>
-            <br>
-        </div>
-        <div class="section">
-            <ol id="list" class="col s12 m6 offset-6" start="0" style="list-style-type: none">
+                        <div class="col s12 m6">
+                            <button class="btn waves-effect waves-light" type="submit" name="action"
+                                    onclick="handlers.addTodo()" style="background-color: #388E3C ">Add a to-do
+                            </button>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="addTodoTextInput" type="text">
+                            <label for="addTodoTextInput">What would you like to accomplish today?</label>
+                        </div>
 
-            </ol>
-        </div>
+
+                    <!-- Switch -->
+                    <div class="col s6">
+                        <div class="switch">
+                            <label>
+                                Toggle all as incomplete
+                                <input type="checkbox" onclick="handlers.toggleAll()">
+                                <span class="lever"></span>
+                                Toggle all as complete
+                            </label>
+                        </div>
+                        <!--<br>-->
+                        <!--<br>-->
+                    </div>
+                    <div class="section">
+                        <ol id="list" class="col s12 m6 offset-6" start="0" style="list-style-type: none">
+
+                        </ol>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
     </div>
 </div>
+
+
 <!-- Footer content -->
-<footer class="page-footer black">
+<footer class="page-footer black" style="padding-top: 0; padding-bottom: 20px">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -98,6 +106,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $(".button-collapse").sideNav();
+        $('.collapsible').collapsible();
     });
 </script>
 

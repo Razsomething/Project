@@ -93,7 +93,7 @@
 
         <div class="palindrome">
             <div class="card col s12 hoverable">
-                <h1>Palindrome checker
+                <h1>Palindrome <span class="hide-on-small-only">checker </span>
                     <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
                     <a class="btn btn-floating green darken-2 test2 s6m m6 l6 palindromeclickthis palindromesecondButton"
@@ -104,18 +104,17 @@
 
             <!--Input field and button running the palindrome function-->
             <div class="palindromeshowthis row" style="display:none;">
-                <div class="input-field col s4">
+                <div class="input-field col s12 m12 l6">
                     <input id="palindromeInput" type="text" required>
                     <label for="addTodoTextInput">Enter the text you'd like to check here</label>
                 </div>
-                <div>
                     <button class="btn waves-effect waves-green darken-2 green darken-2
-            col s4 m1 offset-l1" type="submit" name="action"
+            col s4 m2 addMargin" type="submit" name="action"
                             onclick="palindrome()">Check
                     </button>
                     <!-- Modal Trigger -->
                     <a class="btn waves-effect waves-green darken-2 green darken-2
-                    modal-trigger col s4 m1 offset-l1 logoPadding" href="#modal1">Examples</a>
+                    modal-trigger col s4 m2 addMargin" href="#modal1">Examples</a>
 
                     <!-- Modal Structure -->
                     <div id="modal1" class="modal">
@@ -124,11 +123,12 @@
                             <blockquote>
                                 <p>Avid diva</p>
                                 <p>Stressed desserts</p>
-                                <p>Anna</p>
+                                <p>Won't I panic in a pit now?</p>
+                                <p>A nut for a jar of tuna.</p>
+                                <p>Borrow or rob?</p>
                             </blockquote>
                         </div>
                     </div>
-                </div>
 
                 <!--Palindrome result shown here-->
                 <div class="section">

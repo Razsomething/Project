@@ -3,7 +3,7 @@
  */
 function palindrome(str) {
     str = document.getElementById("palindromeInput").value;
-    var lowerCase = str.toLowerCase();
+    var lowerCase = str.toLowerCase().replace(/[\W_]/g, '');
     var strToArray = lowerCase.split('');
     var len = strToArray.length;
     if (str.length !== 0) {

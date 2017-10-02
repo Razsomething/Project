@@ -40,3 +40,8 @@ main {
 .logoPadding {
     padding-left: 5px;
 }
+
+.addMargin {
+    margin-left: 10px;
+    margin-right: 10px;
+}

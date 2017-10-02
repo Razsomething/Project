@@ -4,23 +4,17 @@
     <title>JavaScript Examples</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <style>
-        #sidenav-overlay {
-            z-index: -1;
-        }
-    </style>
 </head>
 <body>
 <!-- Header content -->
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper grey darken-4">
-            <a href="index.html" class="brand-logo" style="font-size: 3.5vw"><span class="green-text text-darken-2"
-                                                                                   style="padding-left: 10px;">reinventing</span>your
-                career</a>
+            <a href="index.html"  class="brand-logo flow-text hide-on-small-only "><i class="material-icons">cloud</i>reinvent yourself</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a>javaScript</a></li>
@@ -29,7 +23,7 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="side-nav" id="mobile-demo">
                 <li><a class="waves-effect waves-light btn black" href="index.html">Home</a></li>
-                <li><a class="waves-effect waves-light btn black">javaScript</a></li>
+                <li><a class="waves-effect waves-light btn black" href="challenges.html">javaScript</a></li>
                 <li><a class="waves-effect waves-light btn black" href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -38,77 +32,64 @@
 
 <div class="container">
     <div class="row">
-
-        <ul class="collapsible popout" data-collapsible="accordion">
-            <li>
-
-                <div class="collapsible-header">
-                    <h1>To-do List</h1>
+        <div class="card s6m m6 l6 margin">
+            <h1>To-do List
+                <a class="btn btn-floating green darken-2 pulse  clickthis s6m m6 l6 "><i
+                        class="material-icons">add
+                </i></a>
+            </h1>
+        </div>
+        <!-- Button for adding a to-do-->
+        <div class="showthis" style="display:none;">
+            <div class="input-field col s12 m6 l6 ">
+                <input id="addTodoTextInput" type="text">
+                <label for="addTodoTextInput">What would you like to accomplish today?</label>
+            </div>
+            <div class="col s12 m6 ">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            marginTopandBot" type="submit" name="action"
+                        onclick="handlers.addTodo()">Add a to-do
+                </button>
+            </div>
+            <!-- Switch -->
+            <div class="col s12">
+                <div class="switch">
+                    <label>
+                        Toggle all as incomplete
+                        <input type="checkbox" onclick="handlers.toggleAll()">
+                        <span class="lever"></span>
+                        Toggle all as complete
+                    </label>
                 </div>
+                <br>
+                <br>
+            </div>
+            <div class="section">
+                <ol id="list" class="col s12 m6 l6 noStyleType" start="0">
 
-
-                <!-- Button for adding a to-do-->
-                <div class="collapsible-body">
-
-                        <div class="col s12 m6">
-                            <button class="btn waves-effect waves-light" type="submit" name="action"
-                                    onclick="handlers.addTodo()" style="background-color: #388E3C ">Add a to-do
-                            </button>
-                        </div>
-                        <div class="input-field col s12 m6">
-                            <input id="addTodoTextInput" type="text">
-                            <label for="addTodoTextInput">What would you like to accomplish today?</label>
-                        </div>
-
-
-                    <!-- Switch -->
-                    <div class="col s6">
-                        <div class="switch">
-                            <label>
-                                Toggle all as incomplete
-                                <input type="checkbox" onclick="handlers.toggleAll()">
-                                <span class="lever"></span>
-                                Toggle all as complete
-                            </label>
-                        </div>
-                        <!--<br>-->
-                        <!--<br>-->
-                    </div>
-                    <div class="section">
-                        <ol id="list" class="col s12 m6 offset-6" start="0" style="list-style-type: none">
-
-                        </ol>
-                    </div>
-                </div>
-
-            </li>
-        </ul>
+                </ol>
+            </div>
+        </div>
     </div>
 </div>
 
 
 <!-- Footer content -->
-<footer class="page-footer black" style="padding-top: 0; padding-bottom: 20px">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a
-                        href="http://materializecss.com/">MaterializeCSS</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
+<!--<footer class="page-footer black footerpaddingbot">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col l6 s12">-->
+                <!--<p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a-->
+                        <!--href="http://materializecss.com/">MaterializeCSS</a></p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+
 <!-- Scripts -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script src="js/JS.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".button-collapse").sideNav();
-        $('.collapsible').collapsible();
-    });
-</script>
-
+<script src="js/index.js"></script>
 </body>
 </html>

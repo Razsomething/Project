@@ -37,11 +37,11 @@
 <!-- Actual page content -->
 
 <div class="container">
-    <div class="row">
+    <!--<div class="row">-->
 
         <!--To-do list-->
         <div class="todoList">
-            <div class="card s6m m6 l6 margin">
+            <div class="card col s12">
                 <h1>To-do List
                     <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
@@ -52,7 +52,7 @@
             </div>
 
             <!-- Button for adding a to-do-->
-            <div class="showthis" style="display:none;">
+            <div class="showthis row" style="display:none;">
                 <div class="input-field col s12 m6 l6 ">
                     <input id="addTodoTextInput" type="text">
                     <label for="addTodoTextInput">What would you like to accomplish today?</label>
@@ -87,18 +87,11 @@
             </div>
 
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        
 
         <!--Palindrome checker-->
+
         <div class="palindrome">
-            <div class="card s6m m6 l6 margin">
+            <div class="card col s12">
                 <h1>Palindrome checker
                     <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
@@ -111,7 +104,7 @@
             <!--Input field and button running the palindrome function-->
             <div class="palindromeshowthis" style="display:none;">
                 <div class="input-field col s12 m6 l6">
-                    <input id="palindromeInput" type="text">
+                    <input id="palindromeInput" type="text" required>
                     <label for="addTodoTextInput">Enter the text you'd like to check here</label>
                 </div>
                 <div class="col s12 m6 ">
@@ -124,14 +117,13 @@
 
                 <!--Palindrome result shown here-->
                 <div class="section">
-                    <h3 id="palindromeResult" class="col s12">
-
-                    </h3>
+                    <h3 id="palindromeResult" class="col s12"></h3>
                 </div>
             </div>
 
         </div>
-    </div>
+
+    <!--</div>-->
 </div>
 
 

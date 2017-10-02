@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
+
 </head>
 <body>
 <!-- Header content -->
@@ -37,6 +38,8 @@
 
 <div class="container">
     <div class="row">
+
+        <!--To-do list-->
         <div class="todoList">
             <div class="card s6m m6 l6 margin">
                 <h1>To-do List
@@ -84,49 +87,46 @@
             </div>
 
         </div>
-        <div class="todoList">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+
+        <!--Palindrome checker-->
+        <div class="palindrome">
             <div class="card s6m m6 l6 margin">
-                <h1>To-do List
-                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
+                <h1>Palindrome checker
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
-                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton"
+                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 palindromeclickthis palindromesecondButton"
                        style="display:none">
                         <i class="material-icons">arrow_drop_up</i></a>
                 </h1>
             </div>
 
-            <!-- Button for adding a to-do-->
-            <div class="showthis" style="display:none;">
-                <div class="input-field col s12 m6 l6 ">
-                    <input id="addTodoTextInput" type="text">
-                    <label for="addTodoTextInput">What would you like to accomplish today?</label>
+            <!--Input field and button running the palindrome function-->
+            <div class="palindromeshowthis" style="display:none;">
+                <div class="input-field col s12 m6 l6">
+                    <input id="palindromeInput" type="text">
+                    <label for="addTodoTextInput">Enter the text you'd like to check here</label>
                 </div>
                 <div class="col s12 m6 ">
                     <button class="btn waves-effect waves-green darken-2 green darken-2
             marginTopandBot" type="submit" name="action"
-                            onclick="handlers.addTodo()">Add a to-do
+                            onclick="palindrome()">Check
                     </button>
                 </div>
 
-                <!-- Switch -->
-                <div class="col s12">
-                    <div class="switch">
-                        <label>
-                            Toggle all as incomplete
-                            <input type="checkbox" onclick="handlers.toggleAll()">
-                            <span class="lever"></span>
-                            Toggle all as complete
-                        </label>
-                    </div>
-                    <br>
-                    <br>
-                </div>
 
-                <!--To-do items are shown here-->
+                <!--Palindrome result shown here-->
                 <div class="section">
-                    <ol id="list" class="col s12 m6 l6 noStyleType" start="0">
+                    <h3 id="palindromeResult" class="col s12">
 
-                    </ol>
+                    </h3>
                 </div>
             </div>
 
@@ -152,6 +152,7 @@
 <script type="text/javascript" src="js/materialize.js"></script>
 <script src="js/JS.js"></script>
 <script src="js/index.js"></script>
+<script src="js/challenges.js"></script>
 <script>
 
 </script>

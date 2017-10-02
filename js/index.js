@@ -9,5 +9,9 @@ $( ".clickthis" ).click(function() {
     $( ".showthis" ).slideToggle( "slow" );
     $( ".secondButton" ).slideToggle(0);
     $( ".firstButton" ).slideToggle(0);
-
+});
+$( ".palindromeclickthis" ).click(function() {
+    $( ".palindromeshowthis" ).slideToggle( "slow" );
+    $( ".palindromesecondButton" ).slideToggle(0);
+    $( ".palindromefirstButton" ).slideToggle(0);
 });

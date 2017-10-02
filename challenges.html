@@ -37,47 +37,99 @@
 
 <div class="container">
     <div class="row">
-        <div class="card s6m m6 l6 margin">
-            <h1>To-do List
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
-                    <i class="material-icons">arrow_drop_down</i>
-                </a>
+        <div class="todoList">
+            <div class="card s6m m6 l6 margin">
+                <h1>To-do List
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton"
+                       style="display:none">
+                        <i class="material-icons">arrow_drop_up</i></a>
+                </h1>
+            </div>
 
-                <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton" style="display:none">
-                    <i class="material-icons">arrow_drop_up</i>
-                </a>
-            </h1>
-        </div>
-        <!-- Button for adding a to-do-->
-        <div class="showthis" style="display:none;">
-            <div class="input-field col s12 m6 l6 ">
-                <input id="addTodoTextInput" type="text">
-                <label for="addTodoTextInput">What would you like to accomplish today?</label>
-            </div>
-            <div class="col s12 m6 ">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
-            marginTopandBot" type="submit" name="action"
-                        onclick="handlers.addTodo()">Add a to-do
-                </button>
-            </div>
-            <!-- Switch -->
-            <div class="col s12">
-                <div class="switch">
-                    <label>
-                        Toggle all as incomplete
-                        <input type="checkbox" onclick="handlers.toggleAll()">
-                        <span class="lever"></span>
-                        Toggle all as complete
-                    </label>
+            <!-- Button for adding a to-do-->
+            <div class="showthis" style="display:none;">
+                <div class="input-field col s12 m6 l6 ">
+                    <input id="addTodoTextInput" type="text">
+                    <label for="addTodoTextInput">What would you like to accomplish today?</label>
                 </div>
-                <br>
-                <br>
-            </div>
-            <div class="section">
-                <ol id="list" class="col s12 m6 l6 noStyleType" start="0">
+                <div class="col s12 m6 ">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
+            marginTopandBot" type="submit" name="action"
+                            onclick="handlers.addTodo()">Add a to-do
+                    </button>
+                </div>
 
-                </ol>
+                <!-- Switch -->
+                <div class="col s12">
+                    <div class="switch">
+                        <label>
+                            Toggle all as incomplete
+                            <input type="checkbox" onclick="handlers.toggleAll()">
+                            <span class="lever"></span>
+                            Toggle all as complete
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                <!--To-do items are shown here-->
+                <div class="section">
+                    <ol id="list" class="col s12 m6 l6 noStyleType" start="0">
+
+                    </ol>
+                </div>
             </div>
+
+        </div>
+        <div class="todoList">
+            <div class="card s6m m6 l6 margin">
+                <h1>To-do List
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton"
+                       style="display:none">
+                        <i class="material-icons">arrow_drop_up</i></a>
+                </h1>
+            </div>
+
+            <!-- Button for adding a to-do-->
+            <div class="showthis" style="display:none;">
+                <div class="input-field col s12 m6 l6 ">
+                    <input id="addTodoTextInput" type="text">
+                    <label for="addTodoTextInput">What would you like to accomplish today?</label>
+                </div>
+                <div class="col s12 m6 ">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
+            marginTopandBot" type="submit" name="action"
+                            onclick="handlers.addTodo()">Add a to-do
+                    </button>
+                </div>
+
+                <!-- Switch -->
+                <div class="col s12">
+                    <div class="switch">
+                        <label>
+                            Toggle all as incomplete
+                            <input type="checkbox" onclick="handlers.toggleAll()">
+                            <span class="lever"></span>
+                            Toggle all as complete
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                <!--To-do items are shown here-->
+                <div class="section">
+                    <ol id="list" class="col s12 m6 l6 noStyleType" start="0">
+
+                    </ol>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

@@ -40,8 +40,9 @@
     <!--<div class="row">-->
 
         <!--To-do list-->
+
         <div class="todoList">
-            <div class="card col s12">
+            <div class="card hoverable ">
                 <h1>To-do List
                     <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
@@ -58,8 +59,7 @@
                     <label for="addTodoTextInput">What would you like to accomplish today?</label>
                 </div>
                 <div class="col s12 m6 ">
-                    <button class="btn waves-effect waves-green darken-2 green darken-2
-            marginTopandBot" type="submit" name="action"
+                    <button class="btn waves-effect waves-green darken-2 green darken-2" type="submit" name="action"
                             onclick="handlers.addTodo()">Add a to-do
                     </button>
                 </div>
@@ -88,10 +88,11 @@
 
         </div>
 
+
         <!--Palindrome checker-->
 
         <div class="palindrome">
-            <div class="card col s12">
+            <div class="card col s12 hoverable">
                 <h1>Palindrome checker
                     <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
                         <i class="material-icons">arrow_drop_down</i></a>
@@ -102,22 +103,36 @@
             </div>
 
             <!--Input field and button running the palindrome function-->
-            <div class="palindromeshowthis" style="display:none;">
-                <div class="input-field col s12 m6 l6">
+            <div class="palindromeshowthis row" style="display:none;">
+                <div class="input-field col s4">
                     <input id="palindromeInput" type="text" required>
                     <label for="addTodoTextInput">Enter the text you'd like to check here</label>
                 </div>
-                <div class="col s12 m6 ">
+                <div>
                     <button class="btn waves-effect waves-green darken-2 green darken-2
-            marginTopandBot" type="submit" name="action"
+            col s4 m1 offset-l1" type="submit" name="action"
                             onclick="palindrome()">Check
                     </button>
-                </div>
+                    <!-- Modal Trigger -->
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
+                    modal-trigger col s4 m1 offset-l1 logoPadding" href="#modal1">Examples</a>
 
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4 class="section">Palindrome examples</h4>
+                            <blockquote>
+                                <p>Avid diva</p>
+                                <p>Stressed desserts</p>
+                                <p>Anna</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
 
                 <!--Palindrome result shown here-->
                 <div class="section">
-                    <h3 id="palindromeResult" class="col s12"></h3>
+                    <h5 id="palindromeResult" class="col s12"></h5>
                 </div>
             </div>
 

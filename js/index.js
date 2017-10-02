@@ -4,6 +4,7 @@
 $(document).ready(function () {
     $('.slider').slider();
     $(".button-collapse").sideNav();
+    $('.modal').modal();
 
 $( ".clickthis" ).click(function() {
     $( ".showthis" ).slideToggle( "slow" );

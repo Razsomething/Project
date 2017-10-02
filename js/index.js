@@ -7,7 +7,7 @@ $(document).ready(function () {
 });
 $( ".clickthis" ).click(function() {
     $( ".showthis" ).slideToggle( "slow" );
-    $( ".secondButton" ).toggle( "fast");
-    $( ".firstButton" ).toggle( "fast");
+    $( ".secondButton" ).slideToggle(0);
+    $( ".firstButton" ).slideToggle(0);
 
 });

@@ -9,9 +9,6 @@ var toDoList = {
             completed: false
         });
     },
-    changeToDo: function (x, text) {
-        this.toDo[x].todoText = text;
-    },
     deleteToDo: function (y) {
         this.toDo.splice(y, 1);
     },
@@ -38,11 +35,6 @@ var handlers = {
         var addTodoTextInput = document.getElementById('addTodoTextInput');
         toDoList.addToDo(addTodoTextInput.value);
         addTodoTextInput.value = '';
-        view.displayTodos();
-    },
-    changeTodo: function (position, todoText) {
-        var todoText = document.getElementById('changeTodoText');
-        toDoList.changeToDo(position, todoText.value);
         view.displayTodos();
     },
     deleteTodo: function (position) {
@@ -73,8 +65,6 @@ var view = {
             }
             todoLi.id = position;
             todoLi.textContent = todoTextWithCompletion;
-            // todoLi.appendChild(this.createChangeTodoButton());
-            // todoLi.appendChild(this.createInputForChangingToDo());
             todoLi.appendChild(this.createToggleButton());
             todoLi.appendChild(this.createDeleteButton());
             todoUl.appendChild(todoLi);
@@ -95,22 +85,6 @@ var view = {
 
         return toggleButton;
     },
-    // createChangeTodoButton: function () {
-    //     var todoButton = document.createElement('button');
-    //     todoButton.textContent = 'Change';
-    //     todoButton.id = 'todoButton';
-    //     return todoButton;
-    // },
-    // createInputForChangingToDo: function () {
-    //     var inputForChangingToDo = document.createElement('input');
-    //     inputForChangingToDo.textContent = 'Updated content';
-    //     inputForChangingToDo.id = 'changeTodoText';
-    //     inputForChangingToDo.className = 'input-field col s12 m12 l6';
-    //     inputForChangingToDo.type = 'text';
-    //     inputForChangingToDo.label = 'Updated content';
-    //     inputForChangingToDo.style = 'border : 0px; margin : 0px';
-    //     return inputForChangingToDo;
-    // },
     setUpEventListeners: function () {
         var todoUl = document.querySelector('ol');
         todoUl.addEventListener('click', function (event) {

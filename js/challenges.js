@@ -5,6 +5,7 @@
 // Palindrome checker
 function palindrome(str) {
     str = document.getElementById("palindromeInput").value;
+    document.getElementById("palindromeInput").value = "";
     var lowerCase = str.toLowerCase().replace(/[\W_]/g, '');
     var strToArray = lowerCase.split('');
     var len = strToArray.length;
@@ -20,8 +21,10 @@ function palindrome(str) {
 }
 
 // Reverse a string
+
 function reverseString(str) {
     str = document.getElementById("reverseInput").value;
+    document.getElementById("reverseInput").value = "";
     var result = str.split('').reverse().join('');
     if (str.length !== 0 && str.length !== 1) {
         return document.getElementById("reverseResult").innerHTML = result;
@@ -31,8 +34,10 @@ function reverseString(str) {
 }
 
 // Title case a string
+
 function titleCase(str) {
     str = document.getElementById("titleInput").value;
+    document.getElementById("titleInput").value = "";
     var strToArray = str.split(' ');
     var temp = [];
     if (str.length !== 0) {

@@ -39,14 +39,13 @@
 
 <div class="main">
     <div class="container">
+        <br>
+        <!--Image slider-->
         <div class="row">
-
-            <!--Image slider-->
-
             <div class="slider">
                 <ul class="slides">
                     <li>
-                        <img src="media%20files/images/1.jpg"> <!-- random image -->
+                        <img src="media%20files/images/sliderFirstImage.jpg"> <!-- random image -->
                         <div class="caption center-align">
                             <h3>If opportunity doesn’t knock, build a door.
                             </h3>
@@ -54,14 +53,14 @@
                         </div>
                     </li>
                     <li>
-                        <img src="media%20files/images/2.jpg"> <!-- random image -->
+                        <img src="media%20files/images/sliderSecondImage.jpg"> <!-- random image -->
                         <div class="caption left-align">
                             <h3>It doesn't matter how slowly you go as long as you don't stop</h3>
                             <h5 class="light grey-text text-lighten-3">Confucius</h5>
                         </div>
                     </li>
                     <li>
-                        <img src="media%20files/images/3.jpg"> <!-- random image -->
+                        <img src="media%20files/images/sliderThirdImage.jpg"> <!-- random image -->
                         <div class="caption right-align">
                             <h3>Opportunities don't happen, you create them.
                             </h3>
@@ -70,7 +69,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="media%20files/images/4.jpg"> <!-- random image -->
+                        <img src="media%20files/images/sliderFourthImage.jpg"> <!-- random image -->
                         <div class="caption center-align">
                             <h3>It is never too late to be what you might have been.
                             </h3>
@@ -80,12 +79,13 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
-            <!--Far away card-->
-
-            <div class="card col s12 m12 l5 hoverable">
+        <!--First card-->
+        <div class="row">
+            <div class="card medium col s12 section hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="media%20files/images/cardpicture.jpg">
+                    <img class="activator" src="media%20files/images/firstCardImage.png">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">Far far away, behind the word mountains<i
@@ -119,22 +119,16 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <!--Left card and weather widget-->
 
+        <div class="row">
+            <!--Left card-->
 
-            <!--Weather widget-->
-
-            <div class="card-panel col s12 m12 l5 offset-l2 hoverable">
-                <br>
-                <iframe id="forecast_embed" frameborder="0" height="195" width="100%" src="//forecast.io/embed/#lat=46.770439
-&lon=23.591423&name=Cluj-Napoca&color=#388E3C &&units=ca"></iframe>
-            </div>
-
-            <!--Right card-->
-
-            <div class="card col s12 m12 l5 offset-l2 hoverable cardPaddingTop">
+            <div class="card col s12 m12 l6 hoverable ">
 
                 <div class="card-image">
-                    <img src="media files/images/11.jpg"/>
+                    <img src="media%20files/images/leftCardImage.jpg">
                     <span class="card-title text-darken-4">The story of Lorem Ipsum</span>
                 </div>
                 <div class="card-content">
@@ -147,24 +141,31 @@
 
             </div>
 
+            <!--Weather widget-->
+
+            <div class="card col s12 m12 l6 hoverable">
+                <br>
+                <iframe id="forecast_embed" frameborder="0" height="317.3" width="100%" src="//forecast.io/embed/#lat=46.770439
+&lon=23.591423&name=Cluj-Napoca&color=#388E3C &&units=ca"></iframe>
+            </div>
+
 
         </div>
+
     </div>
 </div>
 
-
 <!-- Footer content -->
-<footer class="page-footer black footerpaddingbot">
+
+<footer class="page-footer black">
     <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a
-                        href="http://materializecss.com/">MaterializeCSS</a></p>
-            </div>
-        </div>
+        <p class="grey-text text-lighten-4 center">Designed by Răzvan Mîrleneanu using <a
+                href="http://materializecss.com/">MaterializeCSS</a></p>
     </div>
 </footer>
+
 <!-- Scripts -->
+
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script src="js/index.js"></script>

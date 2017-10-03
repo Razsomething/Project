@@ -2,35 +2,114 @@
 <html lang="en">
 <head>
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="logo">
-            <p style="font-size:40px;">reinventing
-                <a href="index.html"><span style="color:#e4ec04">your career</span></a>
-            </p>
+<!-- Header content -->
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a href="index.html" class="brand-logo flow-text hide-on-small-only">
+                <i class="logoPadding material-icons">rotate_left</i>reinvent yourself</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="challenges.html">javaScript</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i></a>
+            <i class="material-icons hide-on-med-and-up">rotate_left</i>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves-light btn black" href="index.html">Home</a></li>
+                <li><a class="waves-effect waves-light btn black" href="challenges.html">javaScript</a></li>
+                <li><a class="waves-effect waves-light btn black" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="navigation">
-            <button class="buttons" id="active"><a href="contact.html">Contact</a></button>
-            <button class="buttons"><a href="challenges.html">JavaScript Examples</a></button>
-            <button class="buttons"><a href="UI%20examples.html">HTML and CSS Examples</a></button>
-            <button class="buttons"> <a href="index.html">Home</a></button>
+    </nav>
+</div>
+
+<!-- Actual page content -->
+
+<div class="main">
+    <div class="container">
+    <div class="row">
+        <h1 class="center col s12 section">Welcome to my portofolio site</h1>
+    </div>
+
+        <!--Info about myself-->
+        <div class="row">
+            <div class="col s12 m6 card small hoverable">
+                <h2 class="header greenLink">Who am I?
+                    <img src="media%20files/images/test.png"
+                    alt="I couldn't find a better picture" class="right" style="max-width: 200px">
+                </h2>
+
+                <p>My name is Razvan. I am vet med graduate aiming to reinvent myself </p>
+                <p>I am currently getting familiar with the Web Development tools needed to develop
+                    outstanding websites. Where I lack in experience, I compensate with perseverance</p>
+                <p>Feel free to contact me at razsomething@gmail.com</p>
+
+
+
+                <!--</div>-->
+            </div>
         </div>
-    </header>
+
+<!--Languages used-->
+        <div class="row">
+            <div class="col s12 m6 card small hoverable">
+                <h5 class="header">
+                    <i class=" material-icons">desktop_windows</i>
+                    Programming languages I have used while creating this site
+                </h5>
+                <div class="collection">
+                    <p class="collection-item ">HTML</p>
+                    <p class="collection-item ">CSS</p>
+                    <p class="collection-item ">JavaScript</p>
+                    <p class="collection-item ">jQuery</p>
+                </div>
+            </div>
+
+
+        <!--Informal training-->
+
+            <div class="col s12 m6 card small hoverable">
+                <h5 class="header"><i class=" material-icons">chrome_reader_mode
+                </i>Resources used for individual training</h5>
+                <div class="collection">
+                    <a href="https://www.w3schools.com/" class="collection-item greenLink">W3 Schools Coursework - HTML, CSS, JavaScript, jQuerry </a>
+                    <a href="https://www.freecodecamp.org" class="collection-item greenLink">freeCodeCamp CourseWork - Basic Algorithm Scripting</a>
+                    <a href="https://www.codecademy.com" class="collection-item greenLink">Codecademy CourseWork - HTML, JavaScript</a>
+                    <a href="https://watchandcode.com/p/practical-javascript" class="collection-item greenLink">Watch and Code - Practical JavaScript free course</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 </div>
-<div class="footer">
-    <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="UI%20examples.html">HTML and CSS Examples</a></li>
-            <li><a href="challenges.html">JavaScript Examples</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </footer>
-</div>
+
+<!-- Footer content -->
+
+<footer class="page-footer black">
+    <div class="container">
+        <p class="grey-text text-lighten-4 center">Designed by Răzvan Mîrleneanu using <a
+                href="http://materializecss.com/" class="greenLink">MaterializeCSS</a></p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
 </body>
 </html>

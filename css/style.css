@@ -42,6 +42,17 @@ main {
 }
 
 .addMargin {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.marginLeft {
+    margin-left: 40px;
+}
+
+.greenLink {
+    color: #388E3C;
+}
+
+.cardPaddingTop {
+    padding-top: 9px !important;
 }

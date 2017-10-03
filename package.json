@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Razsomething/Project.git"
+    "url": "git+https://github.com/Razsomething/WebDev-Project"
   },
   "keywords": [
     "HTML",
@@ -18,9 +18,9 @@
   "author": "Razvan Mirleneanu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Razsomething/Project/issues"
+    "url": "https://github.com/Razsomething/WebDev-Project/issues"
   },
-  "homepage": "https://github.com/Razsomething/Project#readme",
+  "homepage": "https://github.com/Razsomething/WebDev-Project#readme",
   "dependencies": {
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2"

@@ -25,7 +25,8 @@ function palindrome(str) {
 function reverseString(str) {
     str = document.getElementById("reverseInput").value;
     document.getElementById("reverseInput").value = "";
-    var result = str.split('').reverse().join('');
+    var tempResult = str.toLowerCase().split('').reverse().join('');
+    var result = tempResult.replace(tempResult.charAt(0),tempResult.charAt(0).toUpperCase());
     if (str.length !== 0 && str.length !== 1) {
         return document.getElementById("reverseResult").innerHTML = result;
     }
@@ -54,4 +55,30 @@ function titleCase(str) {
     return document.getElementById("titleResult").innerHTML = upperCased;
     }
     return document.getElementById("titleResult").innerHTML = 'I Can\'t \'Title Case\' An Empty Field'  ;
+}
+
+// Find the Longest Word in a String
+
+function findLongestWord(str) {
+    str = document.getElementById("longest").value;
+    document.getElementById("longest").value = "";
+    var splitStr = str.split(' ');
+    var len = splitStr.length;
+    var wordsLength = [];
+    if (str.length !== 0) {
+        for (var i = 0; i < len; i++) {
+            wordsLength.push(splitStr[i].length);
+        }
+        function sortNumber(a, b) {
+            return a - b;
+        }
+
+        var orderedLengths = wordsLength.sort(sortNumber);
+        var maxLength = orderedLengths.pop();
+        return document.getElementById("longestResult").innerHTML ='The largest word in the sentence is '
+            + maxLength + ' characters long';
+
+    }
+    return document.getElementById("longestResult").innerHTML = 'If you\'re out of ideas, ' +
+        'use some of the provided examples';
 }

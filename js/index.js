@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('.modal').modal();
     $('.modal1reverse') .modal();
+    $('.modalLongest') .modal();
 
 $( ".clickthis" ).click(function() {
     $( ".showthis" ).slideToggle( "slow" );
@@ -26,5 +27,10 @@ $( ".titleclickthis" ).click(function() {
         $( ".titleshowthis" ).slideToggle( "slow" );
         $( ".titlesecondButton" ).slideToggle(0);
         $( ".titlefirstButton" ).slideToggle(0);
+    });
+$( ".longestclickthis" ).click(function() {
+        $( ".longestshowthis" ).slideToggle( "slow" );
+        $( ".longestsecondButton" ).slideToggle(0);
+        $( ".longestfirstButton" ).slideToggle(0);
     });
 });

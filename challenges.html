@@ -38,121 +38,233 @@
 
 <div class="container">
 
-        <!--To-do list-->
+    <!--To-do list-->
 
-        <div class="todoList">
-            <div class="card hoverable ">
-                <h1>To-do List
-                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
-                        <i class="material-icons">arrow_drop_down</i></a>
-                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton"
-                       style="display:none">
-                        <i class="material-icons">arrow_drop_up</i></a>
-                </h1>
-            </div>
-
-            <!-- Button for adding a to-do-->
-            <div class="showthis row" style="display:none;">
-                <div class="input-field col s12 m6 l6">
-                    <input id="addTodoTextInput" type="text">
-                    <label for="addTodoTextInput">What would you like to accomplish today?</label>
-                </div>
-                <div class="col s12 m6 ">
-                    <button class="btn waves-effect waves-green darken-2 green darken-2" type="submit" name="action"
-                            onclick="handlers.addTodo()">Add a to-do
-                    </button>
-                </div>
-
-                <!-- Switch -->
-                <div class="col s12 m8">
-                    <div class="switch">
-                        <label>
-                            Toggle all as incomplete
-                            <input type="checkbox" onclick="handlers.toggleAll()">
-                            <span class="lever"></span>
-                            Toggle all as complete
-                        </label>
-                    </div>
-                </div>
-                <!--Info-->
-                <div class="col s4 pull-s2 hide-on-med-and-down">
-                    <blockquote>
-                        <p>Inspired by Watch and Code <a target="_blank" class="greenLink" href="https://watchandcode.com/p/practical-javascript">
-                         Practical JavaScript</a>
-                            course</p>
-                    </blockquote>
-                </div>
-
-                <!--To-do items are shown here-->
-                <div class="section col s12 ">
-                    <ol id="list" class="noStyleType" start="0">
-
-                    </ol>
-                </div>
-            </div>
-
+    <div class="todoList">
+        <div class="card hoverable ">
+            <h1>To-do List
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis firstButton">
+                    <i class="material-icons">arrow_drop_down</i></a>
+                <a class="btn btn-floating green darken-2 test2 s6m m6 l6 clickthis secondButton"
+                   style="display:none">
+                    <i class="material-icons">arrow_drop_up</i></a>
+            </h1>
         </div>
+
+        <!-- Button for adding a to-do-->
+        <div class="showthis row" style="display:none;">
+            <div class="input-field col s12 m6 l6">
+                <input id="addTodoTextInput" type="text">
+                <label for="addTodoTextInput">What would you like to accomplish today?</label>
+            </div>
+            <div class="col s12 m6 ">
+                <button class="btn waves-effect waves-green darken-2 green darken-2" type="submit" name="action"
+                        onclick="handlers.addTodo()">Add a to-do
+                </button>
+            </div>
+
+            <!-- Switch -->
+            <div class="col s12 m8">
+                <div class="switch">
+                    <label>
+                        Toggle all as incomplete
+                        <input type="checkbox" onclick="handlers.toggleAll()">
+                        <span class="lever"></span>
+                        Toggle all as complete
+                    </label>
+                </div>
+            </div>
+
+            <!--Info-->
+            <div class="col s4 pull-s2 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by Watch and Code <a target="_blank" class="greenLink"
+                                                     href="https://watchandcode.com/p/practical-javascript">
+                        Practical JavaScript</a>
+                        course</p>
+                </blockquote>
+            </div>
+
+            <!--To-do items are shown here-->
+            <div class="section col s12 ">
+                <ol id="list" class="noStyleType" start="0">
+
+                </ol>
+            </div>
+        </div>
+
+    </div>
 
     <div class="divider"></div>
-        <!--Palindrome checker-->
 
+    <!--Palindrome checker-->
 
-        <div class="palindrome">
-            <div class="card col s12 hoverable">
-                <h1>Palindrome <span class="hide-on-small-only">checker</span>
-                    <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
-                        <i class="material-icons">arrow_drop_down</i></a>
-                    <a class="btn btn-floating green darken-2 test2 s6m m6 l6 palindromeclickthis palindromesecondButton"
-                       style="display:none">
-                        <i class="material-icons">arrow_drop_up</i></a>
-                </h1>
+    <div class="palindrome">
+        <div class="card col s12 hoverable">
+            <h1>Palindrome <span class="hide-on-small-only">checker</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 palindromeclickthis palindromefirstButton">
+                    <i class="material-icons">arrow_drop_down</i></a>
+                <a class="btn btn-floating green darken-2 test2 s6m m6 l6 palindromeclickthis palindromesecondButton"
+                   style="display:none">
+                    <i class="material-icons">arrow_drop_up</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the palindrome function-->
+        <div class="palindromeshowthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l6">
+                <input id="palindromeInput" type="text">
+                <label for="palindromeInput">Enter the text you'd like to check here</label>
             </div>
-
-            <!--Input field and button running the palindrome function-->
-            <div class="palindromeshowthis row" style="display:none;">
-
-                <div class="input-field col s12 m12 l6">
-                    <input id="palindromeInput" type="text" >
-                    <label for="palindromeInput">Enter the text you'd like to check here</label>
-                </div>
-                <div class="col s4 m3 l2">
-                    <button class="btn waves-effect waves-green darken-2 green darken-2
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                            onclick="palindrome()">Check
-                    </button>
-                </div>
-                    <!-- Modal Trigger -->
-                <div class="col s4 m3 l1">
-                    <a class="btn waves-effect waves-green darken-2 green darken-2
-                    modal-trigger" href="#modal1">Examples</a>
-                </div>
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <h4 class="section">Palindrome examples</h4>
-                            <blockquote>
-                                <p>Avid diva</p>
-                                <p>Stressed desserts</p>
-                                <p>Won't I panic in a pit now?</p>
-                                <p>A nut for a jar of tuna.</p>
-                                <p>Borrow or rob?</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                <div class="col s4 hide-on-med-and-down">
+                        onclick="palindrome()">Check
+                </button>
+            </div>
+            <!-- Modal Trigger -->
+            <div class="col s4 m3 l1">
+                <a class="btn waves-effect waves-green darken-2 green darken-2
+                    modal-trigger" href="#modal">Examples</a>
+            </div>
+            <!-- Modal Structure -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <h4 class="section">Palindrome examples</h4>
                     <blockquote>
-                        <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink" href="https://www.freecodecamp.org/challenges/check-for-palindromes">
-                            Check for Palindromes</a>
-                            challenge</p>
+                        <p>Never odd or even</p>
+                        <p>Stressed desserts</p>
+                        <p>Won't I panic in a pit now?</p>
+                        <p>A nut for a jar of tuna.</p>
+                        <p>A man, a plan, a canal: Panama</p>
                     </blockquote>
                 </div>
-                <!--Palindrome result shown here-->
-                <div class="section">
-                    <h5 id="palindromeResult" class="col s12"></h5>
+            </div>
+
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                     href="https://www.freecodecamp.org/challenges/check-for-palindromes">
+                        Check for Palindromes</a>
+                        challenge</p>
+                </blockquote>
+            </div>
+            <!--Palindrome result shown here-->
+            <div class="section">
+                <h5 id="palindromeResult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!--Reverse a String-->
+
+    <div class="reverse">
+        <div class="card col s12 hoverable">
+            <h1>Reverse <span class="hide-on-small-only">a string</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 reverseclickthis reversefirstButton">
+                    <i class="material-icons">arrow_drop_down</i></a>
+                <a class="btn btn-floating green darken-2 test2 s6m m6 l6 reverseclickthis reversesecondButton"
+                   style="display:none">
+                    <i class="material-icons">arrow_drop_up</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the reverseString function-->
+        <div class="reverseshowthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l6">
+                <input id="reverseInput" type="text">
+                <label for="reverseInput">Enter the phrase you'd like to reverse here</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="reverseString()">Reverse
+                </button>
+            </div>
+            <!-- Modal Trigger -->
+            <div class="col s4 m3 l1">
+                <a class="btn waves-effect waves-green darken-2 green darken-2
+                    modal-trigger" href="#modal1reverse">Examples</a>
+            </div>
+            <!-- Modal Structure -->
+            <div id="modal1reverse" class="modal">
+                <div class="modal-content">
+                    <h4 class="section">Palindrome examples</h4>
+                    <blockquote>
+                        <p>Boobytrap</p>
+                        <p>Supercallifragilisticexpiallidocious</p>
+                        <p>Erewhon</p>
+                    </blockquote>
                 </div>
             </div>
 
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                     href="https://www.freecodecamp.org/challenges/reverse-a-string">
+                        Reverse a String</a>
+                        challenge</p>
+                </blockquote>
+            </div>
+            <!--Reverse result shown here-->
+            <div class="section">
+                <h5 id="reverseResult" class="col s12"></h5>
+            </div>
         </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!--Title Case a Sentence -->
+
+    <div class="titleCase">
+        <div class="card col s12 hoverable">
+            <h1>Title Case <span class="hide-on-small-only">a Sentence</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 titleclickthis titlefirstButton">
+                    <i class="material-icons">arrow_drop_down</i></a>
+                <a class="btn btn-floating green darken-2 test2 s6m m6 l6 titleclickthis titlesecondButton"
+                   style="display:none">
+                    <i class="material-icons">arrow_drop_up</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the titleCase function-->
+        <div class="titleshowthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l6">
+                <input id="titleInput" type="text">
+                <label for="titleInput">Enter the phrase you'd like to title case here</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="titleCase()">Title Case
+                </button>
+            </div>
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                     href=https://www.freecodecamp.org/challenges/title-case-a-sentence>
+                        Title Case a Sentence</a>
+                        challenge</p>
+                </blockquote>
+            </div>
+            <!--Title case result shown here-->
+            <div class="section">
+                <h5 id="titleResult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
 
     <div class="divider"></div>
 </div>
@@ -160,14 +272,14 @@
 
 <!-- Footer content -->
 <!--<footer class="page-footer black footerpaddingbot">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col l6 s12">-->
-                <!--<p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a-->
-                        <!--href="http://materializecss.com/">MaterializeCSS</a></p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col l6 s12">-->
+<!--<p class="grey-text text-lighten-4 right">Designed by Răzvan Mîrleneanu using <a-->
+<!--href="http://materializecss.com/">MaterializeCSS</a></p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</footer>-->
 
 <!-- Scripts -->

@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.slider').slider();
     $(".button-collapse").sideNav();
     $('.modal').modal();
+    $('.modal1reverse') .modal();
 
 $( ".clickthis" ).click(function() {
     $( ".showthis" ).slideToggle( "slow" );
@@ -16,4 +17,14 @@ $( ".palindromeclickthis" ).click(function() {
     $( ".palindromesecondButton" ).slideToggle(0);
     $( ".palindromefirstButton" ).slideToggle(0);
 });
+$( ".reverseclickthis" ).click(function() {
+        $( ".reverseshowthis" ).slideToggle( "slow" );
+        $( ".reversesecondButton" ).slideToggle(0);
+        $( ".reversefirstButton" ).slideToggle(0);
+    });
+$( ".titleclickthis" ).click(function() {
+        $( ".titleshowthis" ).slideToggle( "slow" );
+        $( ".titlesecondButton" ).slideToggle(0);
+        $( ".titlefirstButton" ).slideToggle(0);
+    });
 });

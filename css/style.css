@@ -33,3 +33,12 @@ main {
     color: #388E3C !important;
 }
 
+
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #388E3C;
+}

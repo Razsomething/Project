@@ -4,8 +4,7 @@
 $(document).ready(function () {
     $(".button-collapse").sideNav();
     $('.modal').modal();
-    $('.modal1reverse') .modal();
-    $('.modalLongest') .modal();
+
 
     $(".clickthis").click(function(){
         $(this).closest('.challenge').find('.showthis').slideToggle('slow')});

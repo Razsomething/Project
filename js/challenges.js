@@ -104,3 +104,22 @@ function factorialize() {
         }
     }
 }
+
+// Return Largest Numbers in Arrays
+
+function largestOfFour() {
+    arr = parseInt(document.getElementById("largest").value, 10);
+console.log(arr);
+    function sort(a, b) {
+        return a - b;
+    }
+    var temp = [];
+    var final = [];
+    for (var i = 0; i < arr.length; i++) {
+        temp.push(arr[i].sort(sort));
+    }
+    for (var j = 0; j < temp.length; j++) {
+        final.push(temp[j].pop());
+    }
+    document.getElementById('largestResult').innerHTML = final;
+}

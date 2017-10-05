@@ -44,3 +44,7 @@ main {
 .switch label input[type=checkbox]:checked+.lever:after {
     background-color: #388E3C;
 }
+
+.contactPadding {
+    padding: 15px !important;
+}

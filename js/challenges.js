@@ -82,3 +82,22 @@ function findLongestWord(str) {
     return document.getElementById("longestResult").innerHTML = 'If you\'re out of ideas, ' +
         'use some of the provided examples';
 }
+
+// Factorialize a Number
+
+function factorialize() {
+    var num = document.getElementById("factorializeinput").value;
+    document.getElementById("factorializeinput").value = '';
+    var result = 1;
+
+        if (num !== 0) {
+        for (var i = num; i > 0; i--) {
+            result = result * i;
+            document.getElementById("factorializeResult").innerHTML ='The result is ' + result;
+        }
+    } else {
+        document.getElementById("factorializeResult").innerHTML = 1;
+    }
+    // document.getElementById("factorializeResult").innerHTML = 'Please enter a number ';
+
+}

@@ -320,7 +320,7 @@
 
             <div class="input-field col s12 m12 l6">
                 <input id="longest" type="text">
-                <label for="longest">Enter your phrase here here</label>
+                <label for="longest">Enter your phrase here</label>
             </div>
             <div class="col s4 m3 l2">
                 <button class="btn waves-effect waves-green darken-2 green darken-2
@@ -397,6 +397,48 @@
     </div>
     <div class="divider"></div>
 
+    <!--Factorialize a Number -->
+
+    <div class="factorialize challenge">
+        <div class="card col s12 hoverable leftPadding">
+            <h1>Factorialize  <span class="hide-on-small-only">a Number</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                    <i class="material-icons">arrow_drop_down</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the factorialize function-->
+        <div class="showthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l6">
+                <input id="factorializeinput" type="number">
+                <label for="factorializeinput">Enter your number here</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="factorialize()">Factorialize
+                </button>
+            </div>
+
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                     href='https://www.freecodecamp.org/challenges/factorialize-a-number'>
+                        Factorialize a Number
+                    </a>
+                        challenge</p>
+                </blockquote>
+            </div>
+            <!--Factorialize result shown here-->
+            <div class="section">
+                <h5 id="factorializeResult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
 </div>
 
 <!--Footer content-->

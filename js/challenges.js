@@ -86,18 +86,21 @@ function findLongestWord(str) {
 // Factorialize a Number
 
 function factorialize() {
-    var num = document.getElementById("factorializeinput").value;
-    document.getElementById("factorializeinput").value = '';
+    var num = parseInt(document.getElementById('factorializeinput').value, 10);
+    document.getElementById('factorializeinput').value = '';
     var result = 1;
 
-        if (num !== 0) {
+    if (num === 0) {
+        document.getElementById('factorializeResult').innerHTML = 1;
+    } else if (isNaN(num)) {
+        console.log('here');
+        document.getElementById('factorializeResult').innerHTML =
+            'Please enter a number ';
+    } else {
         for (var i = num; i > 0; i--) {
             result = result * i;
-            document.getElementById("factorializeResult").innerHTML ='The result is ' + result;
+            document.getElementById('factorializeResult').innerHTML =
+                'The result is ' + result;
         }
-    } else {
-        document.getElementById("factorializeResult").innerHTML = 1;
     }
-    // document.getElementById("factorializeResult").innerHTML = 'Please enter a number ';
-
 }

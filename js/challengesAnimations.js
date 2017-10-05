@@ -1,22 +1,22 @@
 /**
  * Created by Razso on 04-Oct-17.
  */
-$(document).ready(function () {
-    $(".button-collapse").sideNav();
+[20:49, 10/5/2017] Sebi: $(document).ready(function() {
+    $('.button-collapse').sideNav();
     $('.modal').modal();
 
-
-    $(".clickthis").click(function(){
-        $(this).closest('.challenge').find('.showthis').slideToggle('slow')});
-
-    $(".clickthis").click(function(){
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-            $(this).find('i').html('arrow_drop_down');
+    $('.clickthis').click(function() {
+        var currentButton = this;
+        $(currentButton)
+            .closest('.challenge')
+            .find('.showthis')
+            .slideToggle('slow');
+        var icon = $(currentButton).find('i');
+        if (icon.text() === 'arrow_drop_down') {
+            icon.text('arrow_drop_up');
         } else {
-            $(this).find('i').html('arrow_drop_up');
+            icon.text('arrow_drop_down');
         }
-        $(this).data("clicks", !clicks);
     });
 
     $( ".copyButton" ).click(function() {

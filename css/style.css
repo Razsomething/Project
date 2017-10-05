@@ -48,3 +48,15 @@ main {
 .contactPadding {
     padding: 15px !important;
 }
+
+.fourteenPixels {
+    font-size: 14px;
+}
+
+.noPadding {
+    padding: 0px;
+}
+
+.textToCopy {
+    display: -webkit-inline-box;
+}

@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(".clickthis").click(function(){
         $(this).closest('.challenge').find('.showthis').slideToggle('slow')});
 
-    $("a").click(function(){
+    $(".clickthis").click(function(){
         var clicks = $(this).data('clicks');
         if (clicks) {
             $(this).find('i').html('arrow_drop_down');
@@ -18,4 +18,15 @@ $(document).ready(function () {
         }
         $(this).data("clicks", !clicks);
     });
+
+    $( ".copyButton" ).click(function() {
+        var $element = $(this).closest('.example').find('.textToCopy');
+        console.log($element);
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($element.text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    });
+
 });

@@ -7,29 +7,15 @@ $(document).ready(function () {
     $('.modal1reverse') .modal();
     $('.modalLongest') .modal();
 
-    $( ".clickthis" ).click(function() {
-        $( ".showthis" ).slideToggle( "slow" );
-        $( ".secondButton" ).slideToggle(0);
-        $( ".firstButton" ).slideToggle(0);
-    });
-    $( ".palindromeclickthis" ).click(function() {
-        $( ".palindromeshowthis" ).slideToggle( "slow" );
-        $( ".palindromesecondButton" ).slideToggle(0);
-        $( ".palindromefirstButton" ).slideToggle(0);
-    });
-    $( ".reverseclickthis" ).click(function() {
-        $( ".reverseshowthis" ).slideToggle( "slow" );
-        $( ".reversesecondButton" ).slideToggle(0);
-        $( ".reversefirstButton" ).slideToggle(0);
-    });
-    $( ".titleclickthis" ).click(function() {
-        $( ".titleshowthis" ).slideToggle( "slow" );
-        $( ".titlesecondButton" ).slideToggle(0);
-        $( ".titlefirstButton" ).slideToggle(0);
-    });
-    $( ".longestclickthis" ).click(function() {
-        $( ".longestshowthis" ).slideToggle( "slow" );
-        $( ".longestsecondButton" ).slideToggle(0);
-        $( ".longestfirstButton" ).slideToggle(0);
+    $(".clickthis").click(function(){
+        $(this).closest('.challenge').find('.showthis').slideToggle('slow')});
+    $("a").click(function(){
+        var clicks = $(this).data('clicks');
+        if (clicks) {
+            $(this).find('i').html('arrow_drop_down');
+        } else {
+            $(this).find('i').html('arrow_drop_up');
+        }
+        $(this).data("clicks", !clicks);
     });
 });

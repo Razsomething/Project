@@ -1,7 +1,7 @@
 /**
  * Created by Razso on 04-Oct-17.
  */
-[20:49, 10/5/2017] Sebi: $(document).ready(function() {
+$(document).ready(function() {
     $('.button-collapse').sideNav();
     $('.modal').modal();
 

@@ -9,6 +9,7 @@ $(document).ready(function () {
 
     $(".clickthis").click(function(){
         $(this).closest('.challenge').find('.showthis').slideToggle('slow')});
+
     $("a").click(function(){
         var clicks = $(this).data('clicks');
         if (clicks) {

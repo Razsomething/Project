@@ -77,10 +77,13 @@
             <!--Info-->
             <div class="col s4 pull-s2 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by Watch and Code <a target="_blank" class="greenLink"
-                                                     href="https://watchandcode.com/p/practical-javascript">
-                        Practical JavaScript</a>
-                        course</p>
+                    <p>Inspired by Watch and Code
+                        <a target="_blank" class="greenLink"
+                           href="https://watchandcode.com/p/practical-javascript">
+                            Practical JavaScript
+                        </a>
+                        course
+                    </p>
                 </blockquote>
             </div>
 
@@ -172,10 +175,13 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href="https://www.freecodecamp.org/challenges/check-for-palindromes">
-                        Check for Palindromes</a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/check-for-palindromes">
+                            Check for Palindromes
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
             <!--Palindrome result shown here-->
@@ -249,10 +255,13 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href="https://www.freecodecamp.org/challenges/reverse-a-string">
-                        Reverse a String</a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/reverse-a-string">
+                            Reverse a String
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
             <!--Reverse result shown here-->
@@ -290,10 +299,13 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href=https://www.freecodecamp.org/challenges/title-case-a-sentence>
-                        Title Case a Sentence</a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href=https://www.freecodecamp.org/challenges/title-case-a-sentence>
+                            Title Case a Sentence
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
             <!--Title case result shown here-->
@@ -381,11 +393,13 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href=https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string>
-                        Find the Longest Word in a String
-                    </a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href='https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string'>
+                            Find the Longest Word in a String
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
             <!--Longest word result shown here-->
@@ -424,11 +438,13 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href='https://www.freecodecamp.org/challenges/factorialize-a-number'>
-                        Factorialize a Number
-                    </a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href='https://www.freecodecamp.org/challenges/factorialize-a-number'>
+                            Factorialize a Number
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
             <!--Factorialize result shown here-->
@@ -440,27 +456,31 @@
     </div>
     <div class="divider"></div>
 
-    <!--Return Largest Numbers in an Array-->
+    <!--Confirm the Ending -->
 
-    <div class="largestOfFour challenge">
+    <div class="confirmEnding challenge">
         <div class="card col s12 hoverable leftPadding">
-            <h1>Return Largest Numbers <span class="hide-on-small-only">in Arrays</span>
+            <h1>Confirm <span class="hide-on-small-only">the ending</span>
                 <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
                     <i class="material-icons">arrow_drop_down</i></a>
             </h1>
         </div>
 
-        <!--Input field and button running the largestOfFour function-->
+        <!--Input field and button running the Confirm the Ending function-->
         <div class="showthis row" style="display:none;">
 
-            <div class="input-field col s12 m12 l6">
-                <input id="largest" type="text">
-                <label for="largest">I suggest you use the provided examples for this one</label>
+            <div class="input-field col s12 m6 l5">
+                <input id="confirmstr" type="text">
+                <label for="confirmstr">Enter your phrase here</label>
+            </div>
+            <div class="input-field col s12 m6 l3">
+                <input id="confirmtarget" type="text">
+                <label for="confirmtarget">and the supposed ending here</label>
             </div>
             <div class="col s4 m3 l2">
                 <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="largestOfFour()">Largest numbers
+                        onclick="confirmEnding()">Confirm
                 </button>
             </div>
             <!-- Modal Trigger -->
@@ -475,35 +495,28 @@
                     <blockquote>
 
                         <div class="example">
-                            <p class="textToCopy">The quick brown fox jumped over the lazy dog</p>
+                            <p class="textToCopy">Walking on water and developing software from a specification are easy if both are frozen</p>
                             <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
                                 <span class="material-icons test">content_copy</span>
                             </button>
                         </div>
 
                         <div class="example">
-                            <p class="textToCopy">May the force be with you</p>
+                            <p class="textToCopy">Open sesame</p>
                             <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
                                 <span class="material-icons test">content_copy</span>
                             </button>
                         </div>
 
                         <div class="example">
-                            <p class="textToCopy">Google do a barrel roll</p>
+                            <p class="textToCopy">If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing</p>
                             <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
                                 <span class="material-icons test">content_copy</span>
                             </button>
                         </div>
 
                         <div class="example">
-                            <p class="textToCopy">What is the average airspeed velocity of an unladen swallow</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">What if we try a super-long word such as otorhinolaryngology</p>
+                            <p class="textToCopy">Walking on water and developing software from a specification are easy if both are frozen</p>
                             <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
                                 <span class="material-icons test">content_copy</span>
                             </button>
@@ -516,22 +529,162 @@
             <!--Info-->
             <div class="col s4 hide-on-med-and-down">
                 <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href='https://www.freecodecamp.org/challenges/return-largest-numbers-in-arrays'>
-                        Return Largest Numbers in Arrays
-                    </a>
-                        challenge</p>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/confirm-the-ending">
+                            Confirm the Ending
+                        </a>
+                        challenge
+                    </p>
                 </blockquote>
             </div>
-            <!--LargestOfFour result shown here-->
+            <!--Confirm the Endingresult shown here-->
             <div class="section">
-                <h5 id="largestResult" class="col s12"></h5>
+                <h5 id="confirmResult" class="col s12"></h5>
             </div>
         </div>
 
     </div>
     <div class="divider"></div>
 
+    <!--Repeat a string repeat a string -->
+
+    <div class="repeatString challenge">
+        <div class="card col s12 hoverable leftPadding">
+            <h1>Repeat <span class="hide-on-small-only">a string</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                    <i class="material-icons">arrow_drop_down</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the Repeat a string repeat a string function-->
+        <div class="showthis row" style="display:none;">
+
+            <div class="input-field col s12 m6 l5">
+                <input id="repeatStr" type="text">
+                <label for="repeatStr">Enter your string here</label>
+            </div>
+            <div class="input-field col s12 m6 l3">
+                <input id="repeatNum" type="number">
+                <label for="repeatNum">and the repetitions here</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="repeatStringNumTimes()">Repeat
+                </button>
+            </div>
+
+
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string">
+                            Repeat a string repeat a string</a>
+                        challenge
+                    </p>
+                </blockquote>
+            </div>
+            <!--Repeat a string shown here-->
+            <div class="section">
+                <h5 id="repeatResult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
+
+    <!--Truncate a string -->
+
+    <div class="truncateString challenge">
+        <div class="card col s12 hoverable leftPadding">
+            <h1>Truncate <span class="hide-on-small-only">a string</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                    <i class="material-icons">arrow_drop_down</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the Truncate a string function-->
+        <div class="showthis row" style="display:none;">
+
+            <div class="input-field col s12 m6 l5">
+                <input id="truncateStr" type="text">
+                <label for="truncateStr">Enter your string here</label>
+            </div>
+            <div class="input-field col s12 m6 l3">
+                <input id="truncateNum" type="number">
+                <label for="truncateNum">and maximum string length here</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="truncateString()">Truncate
+                </button>
+            </div>
+
+            <!-- Modal Trigger -->
+            <div class="col s4 m3 l1">
+                <a class="btn waves-effect waves-green darken-2 green darken-2
+                    modal-trigger" href="#modall5">Examples</a>
+            </div>
+            <!-- Modal Structure -->
+            <div id="modall5" class="modal">
+                <div class="modal-content">
+                    <h4 class="section">Example strings</h4>
+                    <blockquote>
+
+                        <div class="example">
+                            <p class="textToCopy">A-tisket a-tasket A green and yellow basket</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">Peter Piper picked a peck of pickled peppers</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">Absolutely Longer</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">Walking on water and developing software from a specification are easy if both are frozen</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                    </blockquote>
+                </div>
+            </div>
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/truncate-a-string">
+                            Truncate a string</a>
+                        challenge
+                    </p>
+                </blockquote>
+            </div>
+            <!--Truncate a string result shown here-->
+            <div class="section">
+                <h5 id="truncateResult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
 </div>
 
 
@@ -541,8 +694,9 @@
 
 <footer class="page-footer black ">
     <div class="container">
-        <p class="grey-text text-lighten-4 center">Designed by Răzvan Mîrleneanu using <a
-                href="http://materializecss.com/" class="greenLink">MaterializeCSS</a></p>
+        <p class="grey-text text-lighten-4 center">Designed by Răzvan Mîrleneanu using
+            <a href="http://materializecss.com/" class="greenLink">MaterializeCSS</a>
+        </p>
     </div>
 </footer>
 

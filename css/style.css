@@ -9,8 +9,7 @@ main {
 }
 
 #sidenav-overlay {
-    z-index: -1;
-}
+    z-index: 996 ;}
 
 .customh5 {
     font-size: large
@@ -54,7 +53,7 @@ main {
 }
 
 .noPadding {
-    padding: 0px;
+    padding: 0;
 }
 
 .textToCopy {

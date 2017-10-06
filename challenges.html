@@ -780,6 +780,54 @@
 
     </div>
     <div class="divider"></div>
+
+    <!--Sum All Numbers in a Range-->
+
+    <div class="sumAllNumbers challenge">
+        <div class="card col s12 hoverable leftPadding">
+            <h1>Sum All Numbers<span class="hide-on-small-only"> in a Range</span>
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                    <i class="material-icons">arrow_drop_down</i></a>
+            </h1>
+        </div>
+
+        <!--Input fields and button running the Sum All Numbers in a Range
+     function-->
+        <div class="showthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l5">
+                <input id="number1" type="number">
+                <label for="number1">First number</label>
+            </div>
+            <div class="input-field col s12 m12 l5">
+                <input id="number2" type="number">
+                <label for="number2">Second number</label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="sumAll()">Get the sum
+                </button>
+            </div>
+
+            <!--Info-->
+            <div class="col s4 right hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                     href='https://www.freecodecamp.org/challenges/sum-all-numbers-in-a-range'>
+                        Sum All Numbers in a Range
+                    </a>
+                        challenge</p>
+                </blockquote>
+            </div>
+            <!--LargestOfFour result shown here-->
+            <div class="section">
+                <h5 id="sumAllresult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
 </div>
 
 

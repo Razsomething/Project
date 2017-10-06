@@ -94,7 +94,6 @@ function factorialize() {
     if (num === 0) {
         document.getElementById('factorializeResult').innerHTML = '1';
     } else if (isNaN(num)) {
-        console.log('here');
         document.getElementById('factorializeResult').innerHTML =
             'Please enter a number ';
     } else {
@@ -175,14 +174,14 @@ function truncateString(str, num) {
     document.getElementById('truncateNum').value = '';
 
     if
-    (str.length > num && num>3) {
-        document.getElementById('truncateResult').innerHTML = str.slice(0, num-3) + '...';
+    (str.length > num && num > 3) {
+        document.getElementById('truncateResult').innerHTML = str.slice(0, num - 3) + '...';
     }
     else if (str.length > num && num <= 3) {
-        document.getElementById('truncateResult').innerHTML =  str.slice(0, num) + '...';
+        document.getElementById('truncateResult').innerHTML = str.slice(0, num) + '...';
     }
 
-    else if (str.length === 0){
+    else if (str.length === 0) {
         document.getElementById('truncateResult').innerHTML = 'If you\'re out of ideas, ' +
             'use some of the provided examples';
     }
@@ -195,20 +194,47 @@ function rot13(str) {
     str = document.getElementById('caesarsinput').value;
     document.getElementById('caesarsinput').value = '';
     if (str.length !== 0) {
-    var result = "";
-    for ( var i = 0; i < str.length; i++ ) {
-       var char = str.charCodeAt(i);
-        if ( char < 65 || char > 90 ) {
-            char = char;
-        }
-        else {
-            char = char + 13;
-            if ( char > 90 ) {
-                char =  char - 26;
+        var result = "";
+        for (var i = 0; i < str.length; i++) {
+            var char = str.charCodeAt(i);
+            if (char < 65 || char > 90) {
+                char = char;
             }
+            else {
+                char = char + 13;
+                if (char > 90) {
+                    char = char - 26;
+                }
+            }
+            result = result + String.fromCharCode(char);
         }
-        result = result + String.fromCharCode(char);
+        document.getElementById('caesarsresult').innerHTML = result;
     }
-    document.getElementById('caesarsresult').innerHTML =result;}
     else document.getElementById('caesarsresult').innerHTML = 'Please use one of the provided examples';
+}
+
+// Sum All Numbers in a Range
+
+function sumAll(arr) {
+    arr = [];
+    arr[0] = parseInt(document.getElementById('number1').value, 10);
+    arr[1] = parseInt(document.getElementById('number2').value, 10);
+    document.getElementById('number1').value = '';
+    document.getElementById('number2').value = '';
+
+    if (!isNaN(arr[0]) && !isNaN(arr[1])) {
+        var minarr = arr.sort(function (a, b) {
+            return a - b;
+        });
+
+        for (var i = arr[0]; i < arr[1] - 1;) {
+            i++;
+            minarr.push(i);
+        }
+
+        document.getElementById('sumAllresult').innerHTML = 'The sum of the  numbers in the range is ' + minarr.reduce(function (a, b) {
+                return a + b;
+            });
+    }
+    else document.getElementById('sumAllresult').innerHTML = 'Please enter a number in both fields '
 }

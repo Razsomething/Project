@@ -685,6 +685,101 @@
 
     </div>
     <div class="divider"></div>
+
+    <!--Caesars Cipher-->
+
+    <div class="Caesars challenge">
+        <div class="card col s12 hoverable leftPadding">
+            <h1>Caesars Cipher
+                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                    <i class="material-icons">arrow_drop_down</i></a>
+            </h1>
+        </div>
+
+        <!--Input field and button running the rot13 function-->
+        <div class="showthis row" style="display:none;">
+
+            <div class="input-field col s12 m12 l6">
+                <input id="caesarsinput" type="text">
+                <label for="caesarsinput">Please use one of the examples </label>
+            </div>
+            <div class="col s4 m3 l2">
+                <button class="btn waves-effect waves-green darken-2 green darken-2
+            " type="submit" name="action"
+                        onclick="rot13()">Check
+                </button>
+            </div>
+            <!-- Modal Trigger -->
+            <div class="col s4 m3 l1">
+                <a class="btn waves-effect waves-green darken-2 green darken-2
+                    modal-trigger" href="#modal5">Examples</a>
+            </div>
+            <!-- Modal Structure -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <h4 class="section">Caesars Cipher examples</h4>
+                    <blockquote>
+
+                        <div class="example">
+                            <p class="textToCopy">JUL QVQ GUR PUVPXRA PEBFF GUR EBNQ?</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">GB TRG GB GUR BGURE FVQR!</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">SERR CVMMN!</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">SERR PBQR PNZC</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                        <div class="example">
+                            <p class="textToCopy">GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.</p>
+                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                <span class="material-icons test">content_copy</span>
+                            </button>
+                        </div>
+
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <!--Info-->
+            <div class="col s4 hide-on-med-and-down">
+                <blockquote>
+                    <p>Inspired by freeCodeCamp's
+                        <a target="_blank" class="greenLink"
+                           href="https://www.freecodecamp.org/challenges/caesars-cipher">
+                            Caesars Cipher
+                        </a>
+                        challenge
+                    </p>
+                </blockquote>
+            </div>
+            <!--Caesars Cipher result shown here-->
+            <div class="section">
+                <h5 id="caesarsresult" class="col s12"></h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider"></div>
 </div>
 
 

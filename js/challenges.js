@@ -186,6 +186,29 @@ function truncateString(str, num) {
         document.getElementById('truncateResult').innerHTML = 'If you\'re out of ideas, ' +
             'use some of the provided examples';
     }
-    // else {
-    //     return str;}
+}
+
+
+// Caesars Cipher
+
+function rot13(str) {
+    str = document.getElementById('caesarsinput').value;
+    document.getElementById('caesarsinput').value = '';
+    if (str.length !== 0) {
+    var result = "";
+    for ( var i = 0; i < str.length; i++ ) {
+       var char = str.charCodeAt(i);
+        if ( char < 65 || char > 90 ) {
+            char = char;
+        }
+        else {
+            char = char + 13;
+            if ( char > 90 ) {
+                char =  char - 26;
+            }
+        }
+        result = result + String.fromCharCode(char);
+    }
+    document.getElementById('caesarsresult').innerHTML =result;}
+    else document.getElementById('caesarsresult').innerHTML = 'Please use one of the provided examples';
 }

@@ -238,3 +238,35 @@ function sumAll(arr) {
     }
     else document.getElementById('sumAllresult').innerHTML = 'Please enter a number in both fields '
 }
+
+// Sum All Odd Fibonacci Numbers
+
+function sumFibs(num) {
+    num = parseInt(document.getElementById('fiboNum').value, 10);
+    document.getElementById('fiboNum').value = '';
+    if (!isNaN(num)) {
+        var currentNum = 0;
+        var nextNum = 1;
+        var arr = [];
+        var oddArr = [];
+        for (; currentNum <= num; currentNum = nextNum - currentNum) {
+            nextNum = nextNum + currentNum;
+            arr.push(currentNum);
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !== 0) {
+                oddArr.push(arr[i]);
+                var result = oddArr.reduce(function (a, b) {
+                    return a + b;
+                });
+            }
+        }
+
+        document.getElementById('fiboResult').innerHTML = 'The sum of all o' +
+            'dd Fibonacci numbers less than ' + num + ' is ' + result;
+    }
+    else {
+        document.getElementById('fiboResult').innerHTML = 'Please input a number';
+    }
+}

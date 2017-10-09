@@ -41,11 +41,24 @@
 <!-- Actual page content -->
 
 <div class="container">
-    <div class="row">
-        <h1 class="center col s12 section z-depth-3 contactPadding">Algorithmic challenges and small projects</h1>
-    </div>    <!--To-do list-->
 
-    <div class="challenge">
+    <div class="row">
+        <h1 class="center col s12 section  z-depth-3 contactPadding">
+            Algorithmic challenges and projects
+        </h1>
+    </div>
+
+
+    <!--Personal projects-->
+
+        <h2 class ="center col s12 section greenLink contactPadding">
+        Personal projects
+    </h2>
+        <div class="divider"></div>
+
+        <!--To-do list-->
+
+        <div class="challenge">
         <div class="card hoverable challengesCardPadding">
             <h2>To-do List
                 <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
@@ -99,928 +112,978 @@
         </div>
 
     </div>
-    <div class="divider"></div>
+        <div class="divider"></div>
 
-    <!--Palindrome checker-->
+    <!--Basic challenges-->
 
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Palindrome <span class="hide-on-small-only">checker</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
+        <h2  class="center col s12 section  greenLink contactPadding">
+            freeCodeCamp Basic Algorithmic Scripting challenges
+        </h2>
+        <div class="divider"></div>
 
-        <!--Input field and button running the palindrome function-->
-        <div class="showthis row" style="display:none;">
+        <!--Palindrome checker-->
 
-            <div class="input-field col s12 m12 l6">
-                <input id="palindromeInput" type="text">
-                <label for="palindromeInput">Enter the text you'd like to check here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Palindrome <span class="hide-on-small-only">checker</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the palindrome function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="palindromeInput" type="text">
+                    <label for="palindromeInput">Enter the text you'd like to check here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="palindrome()">Check
-                </button>
-            </div>
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                            onclick="palindrome()">Check
+                    </button>
+                </div>
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modal">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Palindrome examples</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Palindrome examples</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">Never odd or even</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Stressed desserts</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Won't I panic in a pit now?</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">A nut for a jar of tuna.</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">A man, a plan, a canal: Panama</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">Never odd or even</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Stressed desserts</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Won't I panic in a pit now?</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">A nut for a jar of tuna.</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">A man, a plan, a canal: Panama</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/check-for-palindromes">
+                                Check for Palindromes
+                            </a>
+                            challenge
+                        </p>
                     </blockquote>
-
+                </div>
+                <!--Palindrome result shown here-->
+                <div class="section">
+                    <h5 id="palindromeResult" class="col s12"></h5>
                 </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/check-for-palindromes">
-                            Check for Palindromes
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Palindrome result shown here-->
-            <div class="section">
-                <h5 id="palindromeResult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Reverse a String-->
 
-    <!--Reverse a String-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Reverse <span class="hide-on-small-only">a string</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the reverseString function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="reverseInput" type="text">
-                <label for="reverseInput">Enter the phrase you'd like to reverse here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Reverse <span class="hide-on-small-only">a string</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the reverseString function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="reverseInput" type="text">
+                    <label for="reverseInput">Enter the phrase you'd like to reverse here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="reverseString()">Reverse
-                </button>
-            </div>
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                            onclick="reverseString()">Reverse
+                    </button>
+                </div>
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modall2">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modall2" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Examples</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modall2" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Examples</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">Boobytrap</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Supercallifragilisticexpiallidocious</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Erehwon</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">Boobytrap</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Supercallifragilisticexpiallidocious</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Erehwon</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/reverse-a-string">
+                                Reverse a String
+                            </a>
+                            challenge
+                        </p>
                     </blockquote>
+                </div>
+                <!--Reverse result shown here-->
+                <div class="section">
+                    <h5 id="reverseResult" class="col s12"></h5>
                 </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/reverse-a-string">
-                            Reverse a String
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Reverse result shown here-->
-            <div class="section">
-                <h5 id="reverseResult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Title Case a Sentence -->
 
-    <!--Title Case a Sentence -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Title Case <span class="hide-on-small-only">a Sentence</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis ">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the titleCase function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="titleInput" type="text">
-                <label for="titleInput">Enter the phrase you'd like to title case here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Title Case <span class="hide-on-small-only">a Sentence</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis ">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l3">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the titleCase function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="titleInput" type="text">
+                    <label for="titleInput">Enter the phrase you'd like to title case here</label>
+                </div>
+                <div class="col s4 m3 l3">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="titleCase()">Title Case
-                </button>
+                            onclick="titleCase()">Title Case
+                    </button>
+                </div>
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href=https://www.freecodecamp.org/challenges/title-case-a-sentence>
+                                Title Case a Sentence
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+                <!--Title case result shown here-->
+                <div class="section">
+                    <h5 id="titleResult" class="col s12"></h5>
+                </div>
             </div>
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href=https://www.freecodecamp.org/challenges/title-case-a-sentence>
-                            Title Case a Sentence
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Title case result shown here-->
-            <div class="section">
-                <h5 id="titleResult" class="col s12"></h5>
-            </div>
+
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Find the Longest Word in a String-->
 
-    <!--Find the Longest Word in a String-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Find the Longest Word <span class="hide-on-small-only">in a String</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the findLongestWord function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="longest" type="text">
-                <label for="longest">Enter your phrase here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Find the Longest Word <span class="hide-on-small-only">in a String</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the findLongestWord function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="longest" type="text">
+                    <label for="longest">Enter your phrase here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="findLongestWord()">Longest word
-                </button>
-            </div>
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                            onclick="findLongestWord()">Longest word
+                    </button>
+                </div>
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modall3">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modall3" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Example phrases</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modall3" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Example phrases</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">The quick brown fox jumped over the lazy dog</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">May the force be with you</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Google do a barrel roll</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">What is the average airspeed velocity of an unladen swallow</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">What if we try a super-long word such as otorhinolaryngology</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">The quick brown fox jumped over the lazy dog</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">May the force be with you</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Google do a barrel roll</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">What is the average airspeed velocity of an unladen swallow</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">What if we try a super-long word such as otorhinolaryngology</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string'>
+                                Find the Longest Word in a String
+                            </a>
+                            challenge
+                        </p>
                     </blockquote>
+                </div>
+                <!--Longest word result shown here-->
+                <div class="section">
+                    <h5 id="longestResult" class="col s12"></h5>
                 </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/find-the-longest-word-in-a-string'>
-                            Find the Longest Word in a String
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Longest word result shown here-->
-            <div class="section">
-                <h5 id="longestResult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Factorialize a Number -->
 
-    <!--Factorialize a Number -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Factorialize <span class="hide-on-small-only">a Number</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the factorialize function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="factorializeinput" type="number">
-                <label for="factorializeinput">Enter your number here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Factorialize <span class="hide-on-small-only">a Number</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the factorialize function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="factorializeinput" type="number">
+                    <label for="factorializeinput">Enter your number here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="factorialize()">Factorialize
-                </button>
+                            onclick="factorialize()">Factorialize
+                    </button>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/factorialize-a-number'>
+                                Factorialize a Number
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+                <!--Factorialize result shown here-->
+                <div class="section">
+                    <h5 id="factorializeResult" class="col s12"></h5>
+                </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/factorialize-a-number'>
-                            Factorialize a Number
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Factorialize result shown here-->
-            <div class="section">
-                <h5 id="factorializeResult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Confirm the Ending -->
 
-    <!--Confirm the Ending -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Confirm <span class="hide-on-small-only">the ending</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the Confirm the Ending function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m6 l5">
-                <input id="confirmstr" type="text">
-                <label for="confirmstr">Enter your phrase here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Confirm <span class="hide-on-small-only">the ending</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="input-field col s12 m6 l3">
-                <input id="confirmtarget" type="text">
-                <label for="confirmtarget">and the supposed ending here</label>
-            </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the Confirm the Ending function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m6 l5">
+                    <input id="confirmstr" type="text">
+                    <label for="confirmstr">Enter your phrase here</label>
+                </div>
+                <div class="input-field col s12 m6 l3">
+                    <input id="confirmtarget" type="text">
+                    <label for="confirmtarget">and the supposed ending here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="confirmEnding()">Confirm
-                </button>
-            </div>
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                            onclick="confirmEnding()">Confirm
+                    </button>
+                </div>
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modall4">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modall4" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Example phrases</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modall4" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Example phrases</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">Walking on water and developing software from a specification are easy
+                                    if both are frozen</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Open sesame</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">If you want to save our world, you must hurry. We dont know how much
+                                    longer we can withstand the nothing</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Walking on water and developing software from a specification are easy
+                                    if both are frozen</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">Walking on water and developing software from a specification are easy
-                                if both are frozen</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Open sesame</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">If you want to save our world, you must hurry. We dont know how much
-                                longer we can withstand the nothing</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Walking on water and developing software from a specification are easy
-                                if both are frozen</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/confirm-the-ending">
+                                Confirm the Ending
+                            </a>
+                            challenge
+                        </p>
                     </blockquote>
+                </div>
+                <!--Confirm the Endingresult shown here-->
+                <div class="section">
+                    <h5 id="confirmResult" class="col s12"></h5>
                 </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/confirm-the-ending">
-                            Confirm the Ending
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Confirm the Endingresult shown here-->
-            <div class="section">
-                <h5 id="confirmResult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Repeat a string repeat a string -->
 
-    <!--Repeat a string repeat a string -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Repeat <span class="hide-on-small-only">a string</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the Repeat a string repeat a string function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m6 l5">
-                <input id="repeatStr" type="text">
-                <label for="repeatStr">Enter your string here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Repeat <span class="hide-on-small-only">a string</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="input-field col s12 m6 l3">
-                <input id="repeatNum" type="number">
-                <label for="repeatNum">and the repetitions here</label>
-            </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the Repeat a string repeat a string function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m6 l5">
+                    <input id="repeatStr" type="text">
+                    <label for="repeatStr">Enter your string here</label>
+                </div>
+                <div class="input-field col s12 m6 l3">
+                    <input id="repeatNum" type="number">
+                    <label for="repeatNum">and the repetitions here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="repeatStringNumTimes()">Repeat
-                </button>
-            </div>
+                            onclick="repeatStringNumTimes()">Repeat
+                    </button>
+                </div>
 
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string">
-                            Repeat a string repeat a string</a>
-                        challenge
-                    </p>
-                </blockquote>
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/repeat-a-string-repeat-a-string">
+                                Repeat a string repeat a string</a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+                <!--Repeat a string shown here-->
+                <div class="section">
+                    <h5 id="repeatResult" class="col s12"></h5>
+                </div>
             </div>
-            <!--Repeat a string shown here-->
-            <div class="section">
-                <h5 id="repeatResult" class="col s12"></h5>
-            </div>
+
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Truncate a string -->
 
-    <!--Truncate a string -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Truncate <span class="hide-on-small-only">a string</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the Truncate a string function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m6 l5">
-                <input id="truncateStr" type="text">
-                <label for="truncateStr">Enter your string here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Truncate <span class="hide-on-small-only">a string</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="input-field col s12 m6 l3">
-                <input id="truncateNum" type="number">
-                <label for="truncateNum">and maximum string length here</label>
-            </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the Truncate a string function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m6 l5">
+                    <input id="truncateStr" type="text">
+                    <label for="truncateStr">Enter your string here</label>
+                </div>
+                <div class="input-field col s12 m6 l3">
+                    <input id="truncateNum" type="number">
+                    <label for="truncateNum">and maximum string length here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="truncateString()">Truncate
-                </button>
-            </div>
+                            onclick="truncateString()">Truncate
+                    </button>
+                </div>
 
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modall5">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modall5" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Example strings</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modall5" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Example strings</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">A-tisket a-tasket A green and yellow basket</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Peter Piper picked a peck of pickled peppers</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Absolutely Longer</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">Walking on water and developing software from a specification are easy
+                                    if both are frozen</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+                    </div>
+                </div>
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">A-tisket a-tasket A green and yellow basket</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Peter Piper picked a peck of pickled peppers</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Absolutely Longer</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">Walking on water and developing software from a specification are easy
-                                if both are frozen</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/truncate-a-string">
+                                Truncate a string</a>
+                            challenge
+                        </p>
                     </blockquote>
                 </div>
+                <!--Truncate a string result shown here-->
+                <div class="section">
+                    <h5 id="truncateResult" class="col s12"></h5>
+                </div>
             </div>
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/truncate-a-string">
-                            Truncate a string</a>
-                        challenge
-                    </p>
-                </blockquote>
+
+        </div>
+        <div class="divider"></div>
+
+        <!--Return Largest Numbers in Arrays-->
+
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Return Largest Numbers <span class="hide-on-small-only"> in Arrays</span>
+
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <!--Truncate a string result shown here-->
-            <div class="section">
-                <h5 id="truncateResult" class="col s12"></h5>
+            <div class="showthis card-panel" style="display:none;">
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/where-do-i-belong'>
+                                Return Largest Numbers in Arrays
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!--Embedded frame-->
+                <div>
+                    <iframe frameborder="0" width="100%" height="400 px"
+                            src="https://repl.it/LmXe/2?lite=true"></iframe>
+                </div>
+
             </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Chunky Monkey -->
 
-    <!--Caesars Cipher-->
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Chunky Monkey
 
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Caesars Cipher
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the rot13 function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="caesarsinput" type="text">
-                <label for="caesarsinput">Please use one of the examples </label>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+            <div class="showthis card-panel" style="display:none;">
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/chunky-monkey'>
+                                Chunky Monkey
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!--Embedded frame-->
+                <div>
+                    <iframe frameborder="0" width="100%" height="300 px"
+                            src="https://repl.it/LqGc/1?lite=true"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <!--Slasher Flick-->
+
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Slasher Flick
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
+            </div>
+            <div class="showthis card-panel" style="display:none;">
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/slasher-flick'>
+                                Slasher Flick
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!--Embedded frame-->
+                <div>
+                    <iframe frameborder="0" width="100%" height="300 px"
+                            src="https://repl.it/LqH3/1?lite=true"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <!--Falsy Bouncer-->
+
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Falsy Bouncer
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
+            </div>
+            <div class="showthis card-panel" style="display:none;">
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/falsy-bouncer'>
+                                Falsy Bouncer
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!--Embedded frame-->
+                <div>
+                    <iframe frameborder="0" width="100%" height="300 px"
+                            src="https://repl.it/MEpY/4?lite=true"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <!--Where do I belong-->
+
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Where do I belong
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
+            </div>
+            <div class="showthis card-panel" style="display:none;">
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/where-do-i-belong'>
+                                Where do I belong
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!--Embedded frame-->
+                <div>
+                    <iframe frameborder="0" width="100%" height="300 px"
+                            src="https://repl.it/MNXj/2?lite=true"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="divider"></div>
+
+
+    <!--Intermediate challenges-->
+
+        <h2 class="center col s12 section  greenLink contactPadding">
+            freeCodeCamp Intermediate Algorithmic Scripting challenges
+        </h2>
+        <div class="divider"></div>
+
+        <!--Caesars Cipher-->
+
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Caesars Cipher
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
+            </div>
+
+            <!--Input field and button running the rot13 function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="caesarsinput" type="text">
+                    <label for="caesarsinput">Please use one of the examples </label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="rot13()">Check
-                </button>
-            </div>
-            <!-- Modal Trigger -->
-            <div class="col s4 m3 l1">
-                <a class="btn waves-effect waves-green darken-2 green darken-2
+                            onclick="rot13()">Check
+                    </button>
+                </div>
+                <!-- Modal Trigger -->
+                <div class="col s4 m3 l1">
+                    <a class="btn waves-effect waves-green darken-2 green darken-2
                     modal-trigger" href="#modal5">Examples</a>
-            </div>
-            <!-- Modal Structure -->
-            <div id="modal5" class="modal">
-                <div class="modal-content">
-                    <h4 class="section">Caesars Cipher examples</h4>
+                </div>
+                <!-- Modal Structure -->
+                <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <h4 class="section">Caesars Cipher examples</h4>
+                        <blockquote>
+
+                            <div class="example">
+                                <p class="textToCopy">JUL QVQ GUR PUVPXRA PEBFF GUR EBNQ?</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">GB TRG GB GUR BGURE FVQR!</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">SERR CVMMN!</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">SERR PBQR PNZC</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                            <div class="example">
+                                <p class="textToCopy">GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.</p>
+                                <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
+                                    <span class="material-icons test">content_copy</span>
+                                </button>
+                            </div>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
                     <blockquote>
-
-                        <div class="example">
-                            <p class="textToCopy">JUL QVQ GUR PUVPXRA PEBFF GUR EBNQ?</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">GB TRG GB GUR BGURE FVQR!</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">SERR CVMMN!</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">SERR PBQR PNZC</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
-                        <div class="example">
-                            <p class="textToCopy">GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.</p>
-                            <button class="copyButton noPadding waves-effect waves-green darken-2 btn-flat">
-                                <span class="material-icons test">content_copy</span>
-                            </button>
-                        </div>
-
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href="https://www.freecodecamp.org/challenges/caesars-cipher">
+                                Caesars Cipher
+                            </a>
+                            challenge
+                        </p>
                     </blockquote>
-
+                </div>
+                <!--Caesars Cipher result shown here-->
+                <div class="section">
+                    <h5 id="caesarsresult" class="col s12"></h5>
                 </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href="https://www.freecodecamp.org/challenges/caesars-cipher">
-                            Caesars Cipher
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Caesars Cipher result shown here-->
-            <div class="section">
-                <h5 id="caesarsresult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Sum All Numbers in a Range-->
 
-    <!--Sum All Numbers in a Range-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Sum All Numbers<span class="hide-on-small-only"> in a Range</span>
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input fields and button running the Sum All Numbers in a Range
-     function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l5">
-                <input id="number1" type="number">
-                <label for="number1">First number</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Sum All Numbers<span class="hide-on-small-only"> in a Range</span>
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="input-field col s12 m12 l5">
-                <input id="number2" type="number">
-                <label for="number2">Second number</label>
-            </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input fields and button running the Sum All Numbers in a Range
+         function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l5">
+                    <input id="number1" type="number">
+                    <label for="number1">First number</label>
+                </div>
+                <div class="input-field col s12 m12 l5">
+                    <input id="number2" type="number">
+                    <label for="number2">Second number</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="sumAll()">Get the sum
-                </button>
+                            onclick="sumAll()">Get the sum
+                    </button>
+                </div>
+
+                <!--Info-->
+                <div class="col s4 right hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
+                                                         href='https://www.freecodecamp.org/challenges/sum-all-numbers-in-a-range'>
+                            Sum All Numbers in a Range
+                        </a>
+                            challenge</p>
+                    </blockquote>
+                </div>
+                <!--LargestOfFour result shown here-->
+                <div class="section">
+                    <h5 id="sumAllresult" class="col s12"></h5>
+                </div>
             </div>
 
-            <!--Info-->
-            <div class="col s4 right hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's <a target="_blank" class="greenLink"
-                                                     href='https://www.freecodecamp.org/challenges/sum-all-numbers-in-a-range'>
-                        Sum All Numbers in a Range
-                    </a>
-                        challenge</p>
-                </blockquote>
-            </div>
-            <!--LargestOfFour result shown here-->
-            <div class="section">
-                <h5 id="sumAllresult" class="col s12"></h5>
-            </div>
         </div>
+        <div class="divider"></div>
 
-    </div>
-    <div class="divider"></div>
+        <!--Sum All Odd Fibonacci Numbers-->
 
-    <!--Sum All Odd Fibonacci Numbers-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Sum All Odd Fibonacci Numbers
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-
-        <!--Input field and button running the Fibonacci function-->
-        <div class="showthis row" style="display:none;">
-
-            <div class="input-field col s12 m12 l6">
-                <input id="fiboNum" type="number">
-                <label for="fiboNum">Enter your number here</label>
+        <div class="challenge">
+            <div class="card col s12 hoverable challengesCardPadding">
+                <h2>Sum All Odd Fibonacci Numbers
+                    <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
+                        <i class="material-icons">arrow_drop_down</i></a>
+                </h2>
             </div>
-            <div class="col s4 m3 l2">
-                <button class="btn waves-effect waves-green darken-2 green darken-2
+
+            <!--Input field and button running the Fibonacci function-->
+            <div class="showthis row" style="display:none;">
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="fiboNum" type="number">
+                    <label for="fiboNum">Enter your number here</label>
+                </div>
+                <div class="col s4 m3 l2">
+                    <button class="btn waves-effect waves-green darken-2 green darken-2
             " type="submit" name="action"
-                        onclick="sumFibs()">Get the sum
-                </button>
-            </div>
+                            onclick="sumFibs()">Get the sum
+                    </button>
+                </div>
 
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers'>
-                            Sum All Odd Fibonacci Numbers
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-            <!--Fibonacci result shown here-->
-            <div class="section">
-                <h5 id="fiboResult" class="col s12"></h5>
-            </div>
-        </div>
-
-    </div>
-    <div class="divider"></div>
-
-    <!--Where do I belong-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Where do I belong
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-        <div class="showthis card-panel" style="display:none;">
-
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/where-do-i-belong'>
-                            Where do I belong
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-
-            <!--Embedded frame-->
-            <div>
-                <iframe frameborder="0" width="100%" height="300 px"
-                        src="https://repl.it/MNXj/2?lite=true"></iframe>
+                <!--Info-->
+                <div class="col s4 hide-on-med-and-down">
+                    <blockquote>
+                        <p>Inspired by freeCodeCamp's
+                            <a target="_blank" class="greenLink"
+                               href='https://www.freecodecamp.org/challenges/sum-all-odd-fibonacci-numbers'>
+                                Sum All Odd Fibonacci Numbers
+                            </a>
+                            challenge
+                        </p>
+                    </blockquote>
+                </div>
+                <!--Fibonacci result shown here-->
+                <div class="section">
+                    <h5 id="fiboResult" class="col s12"></h5>
+                </div>
             </div>
 
         </div>
-    </div>
-    <div class="divider"></div>
-
-    <!--Return Largest Numbers in Arrays-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Return Largest Numbers <span class="hide-on-small-only"> in Arrays</span>
-
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-        <div class="showthis card-panel" style="display:none;">
-
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/where-do-i-belong'>
-                            Return Largest Numbers in Arrays
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-
-            <!--Embedded frame-->
-            <div>
-                <iframe frameborder="0" width="100%" height="400 px"
-                        src="https://repl.it/LmXe/2?lite=true"></iframe>
-            </div>
-
-        </div>
-    </div>
-    <div class="divider"></div>
-
-    <!--Chunky Monkey -->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Chunky Monkey
-
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-        <div class="showthis card-panel" style="display:none;">
-
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/chunky-monkey'>
-                            Chunky Monkey
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-
-            <!--Embedded frame-->
-            <div>
-                <iframe frameborder="0" width="100%" height="300 px"
-                        src="https://repl.it/LqGc/1?lite=true"></iframe>
-            </div>
-
-        </div>
-    </div>
-    <div class="divider"></div>
-
-    <!--Slasher Flick-->
-
-    <div class="challenge">
-        <div class="card col s12 hoverable challengesCardPadding">
-            <h2>Slasher Flick
-                <a class="btn btn-floating green darken-2 s6m m6 l6 clickthis">
-                    <i class="material-icons">arrow_drop_down</i></a>
-            </h2>
-        </div>
-        <div class="showthis card-panel" style="display:none;">
-
-            <!--Info-->
-            <div class="col s4 hide-on-med-and-down">
-                <blockquote>
-                    <p>Inspired by freeCodeCamp's
-                        <a target="_blank" class="greenLink"
-                           href='https://www.freecodecamp.org/challenges/slasher-flick'>
-                            Slasher Flick
-                        </a>
-                        challenge
-                    </p>
-                </blockquote>
-            </div>
-
-            <!--Embedded frame-->
-            <div>
-                <iframe frameborder="0" width="100%" height="300 px"
-                        src="https://repl.it/LqH3/1?lite=true"></iframe>
-            </div>
-
-        </div>
-    </div>
-    <div class="divider"></div>
+        <div class="divider"></div>
 
 </div>
-
 
 <!--Footer content-->
 

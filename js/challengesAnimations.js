@@ -21,7 +21,6 @@ $(document).ready(function() {
 
     $( ".copyButton" ).click(function() {
         var $element = $(this).closest('.example').find('.textToCopy');
-        console.log($element);
         var $temp = $("<input>");
         $("body").append($temp);
         $temp.val($element.text()).select();

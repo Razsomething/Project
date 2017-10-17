@@ -46,38 +46,35 @@
 
         <!--Info about myself-->
         <div class="row">
-            <div class="col s12 l6 card medium hoverable">
-                <h2 class="greenLink">Who am I?
+            <div class="col s12 l6 card medium hoverable ">
+                <h2 class="greenLink paddingTop">Who am I?
                     <img src="media%20files/images/contactPicture.jpg"
-                         alt="I couldn't find a better picture" class="circle right" style="max-width: 140px">
+                         alt="I couldn't find a better picture" class="circle right pictureWidth">
                 </h2>
                 <p>My name is Razvan. I am vet med graduate aiming to reinvent my career </p>
                 <p>I am currently getting familiar with the Web Development tools needed to develop
                     outstanding websites. Where I lack in experience, I compensate with perseverance</p>
-                <p>The repository of this website can be located <a target="_blank" class="greenLink" href="https://github.com/Razsomething/WebDev-Project">here</a> </p>
-                <p>Feel free to <a href="mailto:razvan.mirleneanu@gmail.com" class="greenLink">contact </a> me<p>
-
-
-
+                <p>The repository of this website can be located
+                    <a target="_blank" class="greenLink" href="https://github.com/Razsomething/WebDev-Project">here</a>
+                </p>
             </div>
 
             <!--Formal education-->
 
-            <div class="col s12 l6 card medium  hoverable">
-                <h5 class="header section">
+            <div class="col s12 l6 card medium hoverable">
+                <h5 class="header section formalPadding">
                     <i class=" material-icons greenLink">chrome_reader_mode</i>
                     Formal education
                 </h5>
                 <h6>Veterinary School at UASVM, Cluj-Napoca</h6>
-                <div class="collection section">
+                <div class="collection ">
                     <p class="collection-item ">Class of 2016</p>
                 </div>
-                <br>
 
                 <h6>'Traian' High School, Constanta </h6>
-                <div class="collection section">
+                <div class="collection ">
                     <p class="collection-item">Class of 2010</p>
-                   </div>
+                </div>
 
             </div>
         </div>
@@ -85,7 +82,7 @@
         <!--Tools used-->
         <div class="row">
             <div class="col s12 l6 card medium hoverable">
-                <h5 class="header section" style="padding-top: 50px">
+                <h5 class="header section paddingTop">
                     <i class=" material-icons greenLink">desktop_windows</i>
                     Programming tools I have used while creating this site
                 </h5>
@@ -96,6 +93,8 @@
                     <p class="collection-item "><span class="greenLink">{</span>CSS<span class="greenLink">}</span></p>
                     <p class="collection-item ">javaScript <span class="greenLink">{}</span></p>
                     <p class="collection-item "><span class="greenLink">$</span>jQuery</p>
+                    <p class="collection-item ">AJAX</p>
+
                 </div>
             </div>
 
@@ -103,7 +102,7 @@
             <!--Informal training-->
 
             <div class="col s12 l6 card medium hoverable">
-                <h5 class="header section" style="padding-top: 50px;"><i class=" material-icons greenLink">web
+                <h5 class="header section paddingTop"><i class=" material-icons greenLink">web
                 </i>Resources used for individual training</h5>
                 <div class="collection section">
                     <a href="https://www.w3schools.com/" class="collection-item greenLink">W3 Schools Coursework - HTML,
@@ -142,7 +141,27 @@
                 </div>
             </div>
         </div>
+
+        <!--Contact info using AJAX and JSON-->
+        <div class="row">
+            <div class="col s12 ">
+                <ul class="collection with-header hoverable">
+                    <li class="collection-header center-align"><h4>Contact me <a class=" btn-floating white pulse">
+                        <i class="material-icons greenLink" onclick="loadInfo()">face</i>
+                    </a></h4></li>
+
+                    <li class="collection-item">
+                        <i class="material-icons prefix greenLink">account_circle</i><span id="name"></span></li>
+                    <li class="collection-item">
+                        <i class="material-icons prefix greenLink">phone</i> <span id="phone"></span></li>
+                    <li class="collection-item">
+                        <i class="material-icons prefix greenLink">contact_mail
+                        </i> <span id="email"></span></li>
+                </ul>
+            </div>
+        </div>
     </div>
+</div>
 </div>
 
 <!-- Footer content -->
@@ -159,6 +178,8 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+
 
 </body>
 </html>

@@ -99,14 +99,6 @@ var view = {
                 handlers.toggleCompleted(parseInt(elementClicked.parentNode.id));
             }
         });
-        todoUl.addEventListener('click', function (event) {
-            var elementClicked = event.target;
-            if (elementClicked.id === 'todoButton') {
-                var position = parseInt(elementClicked.parentNode.id);
-                var newText = document.getElementById('changeTodoText');
-                handlers.changeTodo(position, newText);
-            }
-        });
     }
 };
 
